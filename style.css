@@ -1,3 +1,27 @@
 .navbar-dark .navbar-nav .nav-link {
-	color: blue;
+	color: #007bff;
+}
+
+.navbar-dark .navbar-nav .nav-link:hover {
+	color: black;
+}
+
+.main{
+	padding: 8rem 15px;
+	padding-bottom: 3rem;
+	
+}
+
+
+.main h1 {
+	font-size: 3.5rem;
+	font-weight: bold;
+}
+
+.main strong{
+	font-weight: bold;
+}
+
+.pad_top{
+	padding: 50px 0px;
 }
