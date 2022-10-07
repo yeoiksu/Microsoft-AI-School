@@ -1,0 +1,21 @@
+<!-- 브라우저 크기가 변경되면 사이즈 표시 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div></div>
+    <script>
+        window.addEventListener('resize', 
+        function (){
+            let divElement = document.getElementsByTagName('div')[0];
+            divElement.innerHTML = window.innerWidth;
+        })
+    </script>
+</body>
+
+</html>
