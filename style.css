@@ -1,3 +1,7 @@
+.pad_top{
+	padding: 50px 0px;
+}
+
 .navbar-dark .navbar-nav .nav-link {
 	color: #007bff;
 }
@@ -12,7 +16,6 @@
 	
 }
 
-
 .main h1 {
 	font-size: 3.5rem;
 	font-weight: bold;
@@ -22,6 +25,31 @@
 	font-weight: bold;
 }
 
-.pad_top{
-	padding: 50px 0px;
+/* Section III. 아이콘 추가 */
+.process, .curriculum, .project, .gallery, .contact{
+	padding: 3rem 15px;
 }
+
+.process {
+	margin-bottom: 3rem;
+}
+
+/* Section IV. 커리큘럽 추가 */
+
+.curriculum h5{
+	font-weight: bold; 
+}
+
+.modal-title {
+	font-weight: bold;
+}
+
+.modal-body h6 {
+	font-weight: bold;
+}
+
+.card-title {
+	font-weight: bold;
+}
+
+/* Section V.  */
