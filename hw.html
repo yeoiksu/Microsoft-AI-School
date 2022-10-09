@@ -4,6 +4,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <!-- 아이콘 사용 -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+  <!-- CSS 파일  -->
   <link rel="stylesheet" href="style.css">
 
 </head>
@@ -16,6 +19,8 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 
     <header>
+        <!--  fixed-top: 위에 fixed하는 함수 -->
+        <!-- navbar-expand-lg: 큰 화면에서 네비게이션 바 -->
         <nav class="navbar navbar-expand-lg fixed-top ">
             <a class="navbar-brand" href="#">
                 <button type=button class="btn btn-lg btn-outline-primary">CoCo</button>
@@ -88,11 +93,12 @@
             </div>
         </div>
     </div>
-
+    <!-- s -->
     <!-- Section III. 공유지 / 참여 / 공유 -->
     <!-- 고쳐야 할 것 -->
     <!-- 1. 이름 옆에 아이콘 넣을 것 -->
     
+    <!-- 카드를 사용하지 않는 방법
     <div class="bg-primary text-white pad_top">
         <div class="container">
             <div class ="row text-left">
@@ -115,12 +121,56 @@
                 </div>
             </div>
         </div>
+    </div> -->
+
+    <!-- 카드를 사용하는 방법 -->
+    <!-- 일반 column 대신 카드 column 사용 -->
+    <div class="process container-fluid bg-primary text-white" id="process">
+        <div class="container ">
+            <div class="row">
+                <div class="card-columns">
+                    <div class="card bg-primary border-primary">
+                        <div class="card-body">
+                            <h5 class="card-title">
+                            <!-- 아이콘 삽입 -->
+                            <i class="fas fa-marker"></i> 
+                                공유지 
+                            </h5>
+                            <p class="card-text"> 스터디, 강의, 제품 만들고 싶은 주제를 선정하고 최소한의 공유지를 만듭니다</p>
+                        </div>
+                    </div>
+                    <div class="card bg-primary border-primary">
+                        <div class="card-body">
+                            <h5 class="card-title">
+                            <!-- 아이콘 삽입 -->
+                            <i class="fas fa-hands-helping"></i> 
+                            참여, 협업을 통한 개선
+                            </h5>
+                            <p class="card-text">누구나 참여 가능한 플랫폼, 협업 도구를 적극적으로 사용합니다. 프로토타입을 개선합니다.</p>
+                        </div>
+                    </div>
+                    <div class="card bg-primary border-primary ">
+                        <div class="card-body">
+                            <h5 class="card-title">
+                            <!-- 아이콘 삽입 -->
+                            <i class="fab fa-slideshare"></i>
+                            공유</h5>
+                            <p class="card-text">만들어진 제품의 소스와 과정 또한 공개합니다.<br>
+                                오픈소스, 오픈하드웨어, 오픈프로세스를 지향합니다.
+                                공유와 협업을 통해 정보의 불평등을 해결할 수 있습니다.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 
+
     <!-- Section IV. 카드 부분 1X3 카드적용-->
-    <!-- 고쳐야 할 것 -->
-    <!-- 1. 카드크기 일정하게 바꿀 것 -->
-    <div class="container pad_top">
+    <!-- 커리큘럽 적용하기 -->
+
+    <!-- 내가 작성한 것 -->
+    <!-- <div class="container pad_top">
         <div class ="row">
             <div class="col-md-4">
                 <div class="card">
@@ -155,6 +205,140 @@
                             데이터 분석과 인공지능에 필요한 지식을 배우는 과정입니다.                        
                         </p>
                         <a href="#" class="btn btn-primary ">더 보기</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> -->
+
+    <!-- 모법 답안 -->
+    <div class="curriculum container" id="curriculum">
+        <div class="card-deck">
+            <div class="card border border-primary mb-3 ">
+                <div class="card-body">
+                    <h5 class="card-title">Web</h5>
+                    <p class="card-text">웹을 만들 때 필요한 지식을 배웁니다.
+                    <br>
+                    프런트엔드, 백엔드, 인프라를 다루는 과정입니다.</p>
+                    <p class="card-text d-flex justify-content-end">
+                    <button type="button" class="btn btn-outline-primary btn-xs" data-toggle="modal" data-target="#readMore1">더 보기</button>
+                    </p>
+                    <!-- Modal -->
+                    <div class="modal fade" id="readMore1" tabindex="-1" role="dialog" aria-labelledby="readMore1" aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLabel">웹</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    <h6>인프라</h6>
+                                    <p>서버를 구성하는 방법에 대한 공부를 합니다.</p>
+                                    <p>라즈베리 파이를 통한 실제 서버 구축</p>
+                                    <p>아마존, 애저 등 클라우드 서비스를 이용한 구축</p>
+                                    <br>
+                                    <hr>
+                                    <h6>프런트엔드</h6>
+                                    <p>html문서를 만드는 데 필요한 것을 공부합니다.</p>
+                                    <p>html, css, javascript, jQeury</p>
+                                    <p>Framwork - bootstrap 등</p>
+                                    <br>
+                                    <hr>
+                                    <h6>백엔드</h6>
+                                    <p>웹서버를 구성하는 어플리케이션에 대해서 공부합니다.</p>
+                                    <p>Web Framework, Database, MVC model</p>
+                                    <p>NODE.jS EXPRESS DJANGO MySQL MONGODB 등</p>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-primary" data-dismiss="modal">닫기</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card border border-primary mb-3 ">
+                <div class="card-body">
+                    <h5 class="card-title">BlockChain</h5>
+                    <p class="card-text">블록체인 개념, 아키텍쳐 설계, Dapp만들기를 배우는 과정입니다.</p>
+                    <p class="card-text d-flex justify-content-end">
+                        <button type="button" class="btn btn-outline-primary btn-xs" data-toggle="modal" data-target="#readMore2">더 보기</button>
+                    </p>
+                    <!-- Modal -->
+                    <div class="modal fade" id="readMore2" tabindex="-1" role="dialog" aria-labelledby="readMore2" aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="readMore2">블록체인</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    <h6>블록체인 기초</h6>
+                                    <p>블록체인을 구성하는 기본 개념에 대해 공부합니다.</p>
+                                    <p>기초 기술에 대해 python등을 통해 구현</p>
+                                    <br>
+                                    <hr>
+                                    <h6>아키텍쳐 설계</h6>
+                                    <p>블록체인 엔진에 대한 평가기준 작성과 분석을 하는 과정</p>
+                                    <p>비트코인, 이더리움, 텐더민트 등 다양한 블록체인 엔진을 분석합니다.</p>
+                                    <p>분석을 토대로 설계를 합니다.</p>
+                                    <br>
+                                    <hr>
+                                    <h6>Dapp</h6>
+                                    <p>블록체인 위에 실행되는 어플리케이션을 만드는 과정입니다.</p>
+                                    <p>이더리움, 이오스 등 다양한 엔진 위에서 실행되는 Dapp을 만들어봅니다.</p>
+                                    <p>Dapp과 관련된 보안요소도 살펴봅니다.</p>
+                                    <a href="https://github.com/pangol/dapp101">Dapp101보러 가기</a>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-primary" data-dismiss="modal">닫기</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card border border-primary mb-3 ">
+                <div class="card-body">
+                    <h5 class="card-title">인공지능과 데이터 분석</h5>
+                    <p class="card-text">데이터 분석과 인공지능에 필요한 지식을 배우는 과정입니다.</p>
+                    <p class="card-text d-flex justify-content-end">
+                        <button type="button" class="btn btn-outline-primary btn-xs" data-toggle="modal" data-target="#readMore3">더 보기</button>
+                    </p>
+                    <!-- Modal -->
+                    <div class="modal fade" id="readMore3" tabindex="-1" role="dialog" aria-labelledby="readMore3" aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="readMore3">인공지능과 데이터 분석</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    <h6>파이썬 기초</h6>
+                                    <p>데이터 분석과 인공지능에 많이 사용되는 파이썬 기초를 공부합니다.</p>
+                                    <p>가장 기본적인 데이터분석과 인공지능 기술에 대해 배웁니다.</p>
+                                    <br>
+                                    <hr>
+                                    <h6>인공지능</h6>
+                                    <p>신경망을 다루는 방법에 대해 학습합니다.</p>
+                                    <p>이미지 분석, 자연어 처리 등에 필요한 부가적인 정보도 학습니다.</p>
+                                    <br>
+                                    <hr>
+                                    <h6>데이터 분석</h6>
+                                    <p>데이터 분석의 기초인 확률</p>
+                                    <p>SQL 다루기</p>									
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-primary" data-dismiss="modal">닫기</button>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
