@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p style="background-color: green;">배경색을 변경하세요</p>
+    <button>CLICK</button>
+    <script>
+        let count = 0;
+        let pElement = document.getElementsByTagName('p')[0];
+        
+        // 답안에서는 querySelector를 사용
+        // querySelector : 제공한 선택자 또는 선택자 뭉치와 일치하는 문서 내 첫 번째 Element를 반환합니다. 
+        // 일치하는 요소가 없으면 null을 반환합니다.
+        // let button = document.querySelector('button');
+        let buttonElement = document.getElementsByTagName('button')[0];
+
+        buttonElement.addEventListener('click', function(){
+            count ++;
+            if (count % 2 == 1){
+                pElement.style.backgroundColor = "red";
+            }else{
+                pElement.style.backgroundColor = "green";
+            }
+        })
+     
+    </script>
+</body>
+</html>

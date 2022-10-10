@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>0</h1>
+    <p>10</p>
+    <p>20</p>
+    <button id="plus">+</button>
+    <button id="minus">-</button>
+    <button id="multiple">*</button>
+    <button id="divide">/</button>
+    <script>
+        let h1Element = document.getElementsByTagName('h1')[0];
+        let plusElement = document.getElementById('plus');
+        let minusElement = document.getElementById('minus');
+        let multipleElement = document.getElementById('multiple');
+        let divideElement = document.getElementById('divide');
+        let pElements = document.getElementsByTagName('p');
+        plusElement.addEventListener('click', function(){
+            let result = Number(pElements[0].innerHTML) + Number(pElements[1].innerHTML)
+            h1Element.innerHTML = result;
+        })
+        minusElement.addEventListener('click', function(){
+            let result = Number(pElements[0].innerHTML) - Number(pElements[1].innerHTML)
+            h1Element.innerHTML = result;
+        })
+        multipleElement.addEventListener('click', function(){
+            let result = Number(pElements[0].innerHTML) * Number(pElements[1].innerHTML)
+            h1Element.innerHTML = result;
+        })
+        divideElement.addEventListener('click', function(){
+            let result = Number(pElements[0].innerHTML) / Number(pElements[1].innerHTML)
+            h1Element.innerHTML = result;
+        })
+    </script>
+</body>
+</html>
