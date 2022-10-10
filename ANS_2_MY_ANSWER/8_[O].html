@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            width:100%;
+            height:300px;
+        }
+    </style>
+</head>
+<body>
+    <div style="background-color: red;"></div>
+    <div style="background-color: blue;"></div>
+
+    <script>
+        let divElement = document.getElementsByTagName('div');
+        window.addEventListener('resize', function(){
+            if(window.innerWidth > 1000){
+                divElement[0].style.backgroundColor = "red";
+                divElement[1].style.backgroundColor = "blue";
+            }else if((window.innerWidth > 700) && (window.innerWidth <= 1000)){
+                divElement[0].style.backgroundColor = "blue";
+                divElement[1].style.backgroundColor = "red";
+            }else{
+                divElement[0].style.backgroundColor = "red";
+                divElement[1].style.backgroundColor = "blue";
+            }
+        })
+    </script>
+
+    
+</body>
+</html>
