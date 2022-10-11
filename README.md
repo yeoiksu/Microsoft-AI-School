@@ -1,4 +1,4 @@
-﻿# HTML-CSS
+﻿# Day3_HTML & CSS
 
 ## WEBPAGE 만들기
 ### 8가지 섹션으로 나뉘어짐
