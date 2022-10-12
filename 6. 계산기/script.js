@@ -31,6 +31,20 @@ $(document).ready(function (){
             numArray.reverse();
             opArray.reverse();
 
+            console.log(numArray)
+            if(finalResult < 0){
+                numArray.pop();
+                numArray.pop();
+
+                console.log(numArray)
+                numArray.push(finalResult);
+                console.log(numArray)
+            }
+
+            console.log(numArray);
+            // console.log(opArray);
+            // console.log(finalResult);
+
             // 연산이 끝날 때 까지 반복하기
             for(let i = opArray.length-1; i > 0; i-- ){
                 // numArray의 마지막 2개와 opArray의 마지막 1개를 calculator를 사용하여 연산
