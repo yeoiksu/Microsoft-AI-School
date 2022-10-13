@@ -1,4 +1,4 @@
-# Day6_Python
+# Day7_Python
 
 1. Print(출력)
 2. Input(입력)
