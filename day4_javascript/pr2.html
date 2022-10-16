@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>hello</h1>
+    <p class="test">testing</p>
+    <p class="test">testing</p>
+    <p id="lulu">lulu</p>
+
+    <script>
+        let h1Elements = document.getElementsByTagName('h1')
+        let pElements = document.getElementsByClassName('test')
+        let luElement = document.getElementById('lulu')
+
+        console.log(h1Elements,pElements,luElement)
+        console.log(h1Elements[0],pElements[1],luElement)
+
+        // html 요소의 값 출력해보기
+        console.log(luElement.innerHTML)
+        console.log(getComputedStyle(luElement).color)
+        
+        // html 요소 contents 변경해보기
+        luElement.innerText= "Parking"
+
+        // html 요소 css 변경해보기
+        luElement.style.color ='blue'
+        luElement.style.cssText = 'background-color : green; font-size: 20px;'
+
+        // html 요소 추가(변경)하기
+        let luElement = document.getElementById('lulu')
+        luElement.innerHTML= '<div>inner</div>'
+
+        // html 요소 삭제하기
+        // luElement1.remove()
+        
+    </script>
+
+    
+</body>
+</html>

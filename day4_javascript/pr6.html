@@ -1,0 +1,36 @@
+<!-- 객체에 이벤트 핸들러 등록 -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>hello</h1>
+    <p class='test'>testing</p>
+    <p class='test'>testing</p>  
+    <p id ='lulu'>lulu</p>
+
+    <!-- 이벤트 addEventListener -->
+    
+    <!-- CLICK -->
+    <script>
+        let luElement = document.getElementById('lulu')
+        luElement.addEventListener('click', 
+        function(){
+            alert("CLICK!!")
+        })
+
+    // RESIZE
+        window.addEventListener('resize', 
+        function(){
+            alert(window.innerWidth)        
+        })
+
+    </script>
+
+</body>
+</html>

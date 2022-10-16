@@ -1,0 +1,37 @@
+<!-- 짝수면 글씨색을 red로 홀수면 green로 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>3</p>
+    <p>4</p>
+    <p>5</p>
+    <p>6</p>
+    <p>7</p>
+
+    <script>
+        function isEven(value){
+            return value % 2 == 0;
+        }
+        let pElements = document.getElementsByTagName('p');
+        // console.log(pElements.length)
+
+        // parseInt: int로 형변환해줌
+        for(let i=0; pElements.length; i++){
+            let result = isEven(parseInt(pElements[i].innerText));
+            if(result){
+                pElements[i].style.color = 'red';
+            }else{
+                pElements[i].style.color = 'blue';
+            }
+        }
+        
+    </script>
+</body>
+
+</html>
