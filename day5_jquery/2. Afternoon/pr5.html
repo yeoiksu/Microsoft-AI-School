@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+
+<body>
+    <a href="http://naver.com">naver</a>  
+    <div id="one">1
+        <div id="two">2
+            <div id="three">3</div>
+        </div>
+    </div>    
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+    <script>
+       $('div').click(function(event){
+            $(this).css('background-color', 'red');
+            // 버블링을 막기위한 방법
+            event.stopPropagation()
+            
+        })
+
+        // 기존 기능을 막아줌 
+        $('a').click(function(event){
+            event.preventDefault();
+            $(this).css('background-color', 'red');
+        })
+        
+    </script>
+</body>
+
+
+
+</html> 
