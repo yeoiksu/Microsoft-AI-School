@@ -1,5 +1,6 @@
-# Microsoft AI School
-This space is to record what I've learned from MS AI School program.
+# :school:Microsoft AI School:school:
+:notebook_with_decorative_cover:This space is to record what I've learned from MS AI School program.
+<hr>
 
 ## Today I Learned
 
@@ -11,3 +12,7 @@ This space is to record what I've learned from MS AI School program.
 - Day 6. [JavaScript (3)](https://github.com/yeoiksu/Microsoft-AI-School/tree/main/day6_javascript) 
 - Day 7. [Python 기본 문법(1)](https://github.com/yeoiksu/Microsoft-AI-School/tree/main/day7_python) 
 - Day 8. [Python 기본 문법(2) 및 오프라인 교육](https://github.com/yeoiksu/Microsoft-AI-School/tree/main/day8_python) 
+
+
+<hr>
+More about [MS AI SCHOOL](https://msaischool.kr/) 
