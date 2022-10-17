@@ -1,4 +1,4 @@
-# Day7_Python
+# Day7_Python 파이썬의 기초 개발환경 및 문법
 
 1. Print(출력)
 2. Input(입력)

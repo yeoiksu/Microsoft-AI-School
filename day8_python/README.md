@@ -1,4 +1,4 @@
-# Day8_Python
+# Day8_Python 실용예제 1
 1. 숫자 게임 맞추기
 2. 내 ip주소 가져오기
 3. 음성파일 만들기 (gtts)
