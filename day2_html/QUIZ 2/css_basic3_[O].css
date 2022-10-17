@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 h1 {
 	color: white;
 	background-color: black;
@@ -18,3 +19,25 @@ h2 {
 	color: blue	;
 	background-color: silver;
  }
+=======
+h1 {
+	color: white;
+	background-color: black;
+}
+
+p {
+	color: green;
+	background-color: red;
+	
+}
+
+h2 {
+	color: pink;
+	background-color: yellow;
+ }
+
+ h3 {
+	color: blue	;
+	background-color: silver;
+ }
+>>>>>>> e7a65fde215214278a5c3c288a49ac83405a2ebe
