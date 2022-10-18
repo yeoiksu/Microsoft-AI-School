@@ -11,12 +11,13 @@ This space is to record what I've learned from MS AI School program
 - Day 6. [JavaScript (3)](https://github.com/yeoiksu/Microsoft-AI-School/tree/main/day6_javascript) 
 - Day 7. [Python 기본 문법(1)](https://github.com/yeoiksu/Microsoft-AI-School/tree/main/day7_python) 
 - Day 8. [Python 실용예제(1)  및 오프라인 교육](https://github.com/yeoiksu/Microsoft-AI-School/tree/main/day8_python)
-- Day 9. [Python Azure Cognitive Services](https://github.com/yeoiksu/Microsoft-AI-School/tree/main/day9_python)
+- Day 9. [Python Azure Cognitive Services(1)](https://github.com/yeoiksu/Microsoft-AI-School/tree/main/day9_azure)
+- Day 10. [Python Azure Cognitive Services(2) & Numpy](https://github.com/yeoiksu/Microsoft-AI-School/tree/main/day10_azure)
 
 :link: More about [MS AI SCHOOL](https://msaischool.kr/) 
 
 <!--
-- Day 10. [Python 기본 문법(4)]()
+
 - Day 11. [Python 기본 문법(5)]()
 - Day 12. [Python 기본 문법(6)]()
 - Day 13. [Python 기본 문법(7)]()
