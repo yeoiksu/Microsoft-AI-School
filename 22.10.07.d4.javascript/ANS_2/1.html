@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>0</h1>
+    <button id="plus">+</button>
+    <button id="reset">reset</button>
+    <button id="minus">-</button>
+    <script>
+        let h1Element = document.getElementsByTagName('h1')[0];
+        let plusElement = document.getElementById('plus');
+        let resetElement = document.getElementById('reset');
+        let minusElement = document.getElementById('minus');
+        let count = 0;
+        plusElement.addEventListener('click', function(){
+            count++;
+            h1Element.innerHTML = count;
+        })
+        resetElement.addEventListener('click', function(){
+            count = 0;
+            h1Element.innerHTML = count;
+        })
+        minusElement.addEventListener('click', function(){
+            count--;
+            h1Element.innerHTML = count;
+        })
+    </script>
+</body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="number">
+    <input type="number">
+    <button id="plus">+</button>
+    <button id="minuse">-</button>
+    <button id="multiply">x</button>
+    <button id="divide">/</button>
+    <div>0</div>
+    <script>
+        let inputElements = document.getElementsByTagName('input');
+        let plusElement = document.getElementById('plus');
+        let minuseElement = document.getElementById('minuse');
+        let multiplyElement = document.getElementById('multiply');
+        let divideElement = document.getElementById('divide');
+        plusElement.addEventListener('click',function(){
+            if(isEmpty()){
+                return;
+            }
+            let result = Number(inputElements[0].value) + Number(inputElements[1].value);
+            document.getElementsByTagName('div')[0].innerHTML = result;
+        })
+        minuseElement.addEventListener('click',function(){
+            if(isEmpty()){
+                return;
+            }
+            let result = Number(inputElements[0].value) - Number(inputElements[1].value);
+            document.getElementsByTagName('div')[0].innerHTML = result;
+        })
+        multiplyElement.addEventListener('click',function(){
+            if(isEmpty()){
+                return;
+            }
+            let result = Number(inputElements[0].value) * Number(inputElements[1].value);
+            document.getElementsByTagName('div')[0].innerHTML = result;
+        })
+        divideElement.addEventListener('click',function(){
+            if(isEmpty()){
+                return;
+            }
+            let result = Number(inputElements[0].value) / Number(inputElements[1].value);
+            document.getElementsByTagName('div')[0].innerHTML = result;
+        })
+        function isEmpty(){
+            if(inputElements[0].value == '' || inputElements[1].value == ''){
+                alert('값을 입력해주세요');
+                return true;
+            }
+            return false;
+        }
+    </script>
+</body>
+</html>

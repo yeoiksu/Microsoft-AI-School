@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button>클릭</button>
+    <table border="1"></table>
+    <script>
+        let people = [{'name':'park', 'age':20}, {'name':'kim', 'age':30}, {'name':'lee', 'age':40}];
+        let buttonElement = document.getElementsByTagName('button')[0];
+        let tableElement = document.getElementsByTagName('table')[0];
+        let count = 0;
+        buttonElement.addEventListener('click', function(){
+            if(count < people.length){
+                tableElement.innerHTML += '<tr><td>' + people[count].name + '</td><td>' + people[count].age + '</td></tr>';
+                count++;
+            }else{
+                alert("더이상 데이터가 없습니다.");
+            }
+        })
+    </script>
+</body>
+</html>

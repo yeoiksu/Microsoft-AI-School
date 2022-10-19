@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>0</h1>
+    <button id="plus">+</button>
+    <button id="reset">reset</button>
+    <button id="minus">-</button>
+    
+    <script>
+        let count = 0;
+        let displayNum  = document.getElementsByTagName('h1')[0];
+        let buttonPlus  = document.getElementById('plus');
+        let buttonReset = document.getElementById('reset');
+        let buttonMinus = document.getElementById('minus');
+        
+        buttonPlus.addEventListener('click', function(){
+            count += 1;
+            displayNum.innerText = count;
+        })
+        buttonReset.addEventListener('click', function(){
+            count = 0;
+            displayNum.innerText = count;
+        })
+        buttonMinus.addEventListener('click', function(){
+            count -= 1;
+            if (count <= 0){
+                alert('음수는 지원하지 않습니다!');
+            }else{
+                displayNum.innerText = count;
+            }
+        })
+        
+    </script>
+</body>
+</html>
