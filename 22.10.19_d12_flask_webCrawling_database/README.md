@@ -6,6 +6,31 @@
 
 ## 2. Web Crawling
 
+### 2.1. requests.get()을 이용해 html5를 가져온다
+```python
+import requests
+
+result = requests.get(URL).text
+```
+- URL을 읽어와서 TEXT 형태로 result에 저장한다
+
+### 2.2.  BeautifulSoup(text, parser)을 이용해 원하는 정보를 가져온다
+```python
+import bs4
+
+parser = 'html.parser'
+bsObj = bs4.BeautifulSoup(result, parser)
+
+# find : 첫번째 꺼를 찾음
+# find('tag이름', {'class or key': 'class or key 이름'} )
+bsObj.find('a', {'class': 'basicList_link__JLQJf'}).text
+
+# find_all : 해당조건을 만족하는 모든 요소를 리스트로 반환
+items = bsObj.find_all('a', {'class': 'basicList_link__JLQJf'})
+```
+- parser : 구조화 되있는 데이터를 이해하는 해석기
+- find, find_all() 함수 사용
+
 
 ## 3. Azure Database
 ### Azure Data Services
@@ -64,7 +89,6 @@ LIMIT 5;
 - officeCode LIKE '%son' : 'son'으로 끝나는 모든 것(%) => 최대한 사용 안하는게 좋음 (데이터베이스에 많은 부화를 생성) 
 - officeCode IN (1, 2, 3) : 1 2 3 중에 있으면
 - officeCode IS NULL : NULL 값이면 (0이나 empty string은 아님)
-- 
 
 #### 3) SELECT DISTINCT : 중복되는거 없이 한번만 SELECT 하고 싶을 때 
 
