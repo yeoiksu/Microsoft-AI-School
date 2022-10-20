@@ -20,7 +20,6 @@ This space is to record what I've learned from MS AI School program
 :link: More about [MS AI SCHOOL](https://msaischool.kr/) 
 
 <!--
-
 - Day 13.&nbsp;&nbsp;[Python. 기본 문법(7)]()
 - Day 14.&nbsp;&nbsp;[커리어멘토링]()
 - Day 15.&nbsp;&nbsp;[타운홀미팅]()
