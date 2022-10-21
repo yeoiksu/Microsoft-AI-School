@@ -1,10 +1,13 @@
-# Day13. Data Preprocessing
+# Day13. Data Preprocessing & Azure
 
-## Data 분석을 용이하게 하기 위해 고치는 작업
+## I. Data Preprocessing
+<br>
+
+### Data 분석을 용이하게 하기 위해 고치는 작업
     - 전체 프로젝트의 80~90% 소모 (>>알고리즘 구현)
     - 데이터 자체가 잘못된 경우 실험 결과가 개선 X
 
-## 대표적인 Data Preprocessing 기법
+### 대표적인 Data Preprocessing 기법
     1. Scaling (스케일링)
     2. Sampling (샘플링)
     3. Dimensionality Reduction (차원의 축소)
@@ -26,20 +29,67 @@
 ### 2. Sampling (샘플링)
     - 데이터의 불균형 문제를 해결하기 위함 (한쪽으로 치우치지 않게 해줌)
     - 데이터를 임의로 추가/삭제 하므로 risk(편향된 데이터 or 중요한 속성 삭제) 발생 가능
-    - imblearn의 내장함수 RandomOverSampler, RandomUnderSampler 사용
     - 대표적인 2가지 방법
         [1] Oversampling  : 적은 클래스의 수를 증가
         [2] UnderSampling : 많은 클래스의 수를 감소
+        [3] SMOTHE
 #### 2.1. Oversampling
     - Random으로 추가
     - Overfitting 이슈가 발생 가능 (과접합) : 편향된 데이터 생성 가능
 #### 2.2. UnderSampling
     - Random으로 삭제
     - 중요한 속성을 가진 data를 삭제 가능
+#### 2.3. SMOTHE
+    - Oversampling 과 Undersampling의 단점을 극복한 sampling 방법
+    - 데이터 손실 없이 과적합 문제를 해결할 수 있음
 ------
 ### 3. Dimensionality Reduction (차원의 축소)
+    - 데이터의 차원이 불필요하게 큰 경우, 필요 ㅇ덦는 변수를 제거하고 과적합을 방지하기 위해 차원을 축소함
+    - 차원이 크면 해석하는데 어려움이 있어 축소하는 경우도 있음
+    - 대표적인 방법
+        [1] PCA (Principal Component Analysis : 주성분 분석)
 ------
-### 4. Categorical Variable to Numeric Variable ()
-------
+### 4. Categorical Variable to Numeric Variable
+    - 범주형(Categorical) 데이터는 주로 문자열로 표시
+    - 컴퓨터가 data를 활용하고 학습하기 위해서 data를 모두 수치화 필요
+
+<br>
+
+
+# II. Azure 교육
+### 1. Azure Virtual Machine에서 Window 실행하기 ([link](https://learn.microsoft.com/ko-kr/azure/virtual-machines/windows/quick-create-portal))
+    [1] 리소스그룹 선택 후 '+ 만들기'
+    [2] '가상 머신' 만들기 선택
+    [3] <기본 사항>
+        가상머신이름 : 설정
+        이미지 : "Windows Sever 2022" 선택
+        관리자계정 : "이름", "암호" 설정 후
+        검토 + 만들기
+    [4] 개요 >>  네트워크
+        인바운드 포트 규칙 추가 >> 서비스 >> HTTP(80) 추가
+    [5] Window에 "원격 데스크톱 연결"을 검색후 Azure의 "공용 IP 주소" 입력
+    [6] 이전에 가상머신 생성 시 입력했던 "이름"과 "암호" 입력
+    [7] 가상 머신에서 Window 생성완료
+    [8] 가상 머신의 Window에서 powershell 실행 후 "Install-WindowsFeature -name Web-Server -IncludeManagementTools" 입력 : 기본 설치
+
+### 2. Azure Virtual Machine에서 Ubuntu 실행하기 ([link](https://learn.microsoft.com/ko-kr/azure/virtual-machines/linux/quick-create-portal))
+    [1] 리소스그룹 선택 후 '+ 만들기'
+    [2] '가상 머신' 만들기 선택
+    [3] 기본 사항 >> 인스턴스 detail
+        가상머신이름 : 설정
+        이미지 : "Ubuntu 18.04" 선택
+        인증유형 : "SSH 공개 키" 설정
+        관리자계정 : "이름", "암호" 설정 후
+        검토 + 만들기
+    [4] 개요 >>  네트워크
+        인바운드 포트 규칙 추가 >> 서비스 >> HTTP(80) 추가
+    [5] Window에 "원격 데스크톱 연결"을 검색후 Azure의 "공용 IP 주소" 입력
+    [6] 이전에 가상머신 생성 시 입력했던 "이름"과 "암호" 입력
+    [7] 가상 머신에서 Ubuntu 생성완료
+    [8] 가상 머신의 Ubuntu Bash 프롬프트를 실행 후 설치한 .pem 파일에 대한 권한 설정
+    [9] "sudo apt-get -y update", "sudo apt-get -y install nginx" 입력
+
+### 3. Azure에서 가상머신 확장 집합 만들기 ([link](https://learn.microsoft.com/ko-kr/azure/virtual-machine-scale-sets/quick-create-portal))
+
 
 
