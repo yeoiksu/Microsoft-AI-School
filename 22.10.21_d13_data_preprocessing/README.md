@@ -1,0 +1,45 @@
+# Day13. Data Preprocessing
+
+## Data 분석을 용이하게 하기 위해 고치는 작업
+    - 전체 프로젝트의 80~90% 소모 (>>알고리즘 구현)
+    - 데이터 자체가 잘못된 경우 실험 결과가 개선 X
+
+## 대표적인 Data Preprocessing 기법
+    1. Scaling (스케일링)
+    2. Sampling (샘플링)
+    3. Dimensionality Reduction (차원의 축소)
+    4. Categorical Variable to Numeric Variable ()
+------
+### 1. Scaling (스케일링)
+    - 변수의 크기가 너무 크고나 작아 결과에 미치는 영향력이 작을 때 변수의 크기를 일정하게 맞춰주는 작업
+    - sklearn의 MinMaxScaler() 내장함수 fit_transform() 사용
+    - 대표적인 2가지 방법
+        [1] Min-Max scaling
+        [2] Standard Scaling : Z-score Normalization을 사용
+#### 1.1. Min-Max Scaling    
+    - 값의 범위가 0 ~ 1 사이로 변경 : 단위 크기와 상관없이 중요한 영향력을 가질 수 있게 함
+    - 전체적인 수치를 '1'을 기준으로 비율이 조정 : 같은 조건에서 학습 될 수 있게 함
+#### 1.2. Z-scaore Normalization을 이용한 standard scaling
+    - 위의 Min-Max Scaling과 비슷
+    - 평균 0, 표준편차 1
+------
+### 2. Sampling (샘플링)
+    - 데이터의 불균형 문제를 해결하기 위함 (한쪽으로 치우치지 않게 해줌)
+    - 데이터를 임의로 추가/삭제 하므로 risk(편향된 데이터 or 중요한 속성 삭제) 발생 가능
+    - imblearn의 내장함수 RandomOverSampler, RandomUnderSampler 사용
+    - 대표적인 2가지 방법
+        [1] Oversampling  : 적은 클래스의 수를 증가
+        [2] UnderSampling : 많은 클래스의 수를 감소
+#### 2.1. Oversampling
+    - Random으로 추가
+    - Overfitting 이슈가 발생 가능 (과접합) : 편향된 데이터 생성 가능
+#### 2.2. UnderSampling
+    - Random으로 삭제
+    - 중요한 속성을 가진 data를 삭제 가능
+------
+### 3. Dimensionality Reduction (차원의 축소)
+------
+### 4. Categorical Variable to Numeric Variable ()
+------
+
+

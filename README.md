@@ -14,7 +14,7 @@ This space is to record what I've learned from MS AI School program
 - Day 9.  [Python. Azure Cognitive Services(1)](https://github.com/yeoiksu/Microsoft-AI-School/tree/main/22.10.17_d09_azure)
 - Day 10. &nbsp;&nbsp;[Python. Azure Cognitive Services(2) & Numpy](https://github.com/yeoiksu/Microsoft-AI-School/tree/main/22.10.18_d10_azure_numpy)
 - Day 11. &nbsp;&nbsp;[Python. Pandas & Matplotlib Pyplot](https://github.com/yeoiksu/Microsoft-AI-School/tree/main/22.10.19_d11_pandas_matplot)
-- Day 12. &nbsp;&nbsp;[Python. Flask & Web Crawling & Azure SQL Database](https://github.com/yeoiksu/Microsoft-AI-School/tree/main/22.10.19_d12_flask_webCrawling_database)
+- Day 12. &nbsp;&nbsp;[Python. Flask & Web Crawling & Azure SQL Database](https://github.com/yeoiksu/Microsoft-AI-School/tree/main/22.10.20_d12_flask_webCrawling_database)
 
 
 :link: More about [MS AI SCHOOL](https://msaischool.kr/) 
