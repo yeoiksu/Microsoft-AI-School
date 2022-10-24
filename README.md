@@ -16,19 +16,12 @@ This space is to record what I've learned from MS AI School program
 - Day 11. &nbsp;&nbsp;[Python. Pandas & Matplotlib Pyplot](https://github.com/yeoiksu/Microsoft-AI-School/tree/main/22.10.19_d11_pandas_matplot)
 - Day 12. &nbsp;&nbsp;[Python. Flask & Web Crawling & Azure SQL Database](https://github.com/yeoiksu/Microsoft-AI-School/tree/main/22.10.20_d12_flask_webCrawling_database)
 - Day 13. &nbsp;&nbsp;[Python. Data Preprocessiong & Azure Virtual Machine](https://github.com/yeoiksu/Microsoft-AI-School/tree/main/22.10.21_d13_data_preprocessing)
+- Day 14. &nbsp;&nbsp;[Career Mentoring I](https://github.com/yeoiksu/Microsoft-AI-School/tree/main/22.10.24_d14_career_mentoring_1)
 
 
 :link: More about [MS AI SCHOOL](https://msaischool.kr/) 
 
 <!--
-- Day 13.&nbsp;&nbsp;[Python. 기본 문법(7)]()
-- Day 14.&nbsp;&nbsp;[커리어멘토링]()
-- Day 15.&nbsp;&nbsp;[타운홀미팅]()
-- Day 16.&nbsp;&nbsp;[AI 기초이해(1)]()
-- Day 17.&nbsp;&nbsp;[AI 기초이해(2)]()
-- Day 18.&nbsp;&nbsp;[AI 기초이해(3)]()
-- Day 19.&nbsp;&nbsp;[AI 기초이해(4)]()
-
 - DAY 100. [Python. Pandas & Matplotlib Pyplot]()
 
 ### :lemon: November
