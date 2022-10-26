@@ -14,7 +14,7 @@
         ex) Anomaly(변칙 검색), Clustering(군집화)
     3. Reinforcement Learning (강화학습): Reward(보상) 제공, 인과관계가 중요, 게임에 많이 사용(알파고), 로봇
 
-<img src='image/ML.jpeg'></img>
+<img src='image/ML.jpeg' style= 'width: 400px'></img>
 
 #### -​ Scikit-learn이란 ?  
     - python을 대표하는 머신러닝 라이브러리
@@ -34,7 +34,7 @@
 ### - Data 분류
     1. Features(특징): 문제, 입력되는 정보
     2. Label(라벨): 정답, 예측을 하고자 하는 대상 항목
-<img src='image/data.png'></img><hr>
+<img src='image/data.png' style= 'width: 400px'></img><hr>
 
 ## 3. Orange3을 활용한 Data Mining (Only for today)
 - 데이터에 대한 기본지식이 없이도 데이터 처리 및 시각화하고 머신러닝을 적용해 볼 수 있는 도구
@@ -48,21 +48,21 @@
 ### -  Orange3를 이용한 Data 분석
 #### 1. Regression<hr>
 #### 1.1. pratice 1 (Custom Data)
-<img src='image/pr1.png'></img>
+<img src='image/pr1.png' style= 'height: 200px'></img>
 
     - Topic: y값 예측
     1) Feature : 근속 년차
     2) target : 연봉
 
 #### 1.2. practice 2 (Titanic Data)
-<img src='image/pr2.png'></img>
+<img src='image/pr2.png' style= 'height: 300px'></img>
 
     - Topic: 타이타닉 
     1) Feature : 
     2) target : 
 
 #### 1.3. practice 3 (Housing Data)
-<img src='image/pr3.png'></img>
+<img src='image/pr3.png' style= 'height: 300px'></img>
     
     - Topic: 보스턴 집 값 예측
     1) Feature : crim(범죄율), 등 13개
@@ -70,7 +70,7 @@
 
 ### 2. Classification<hr>
 #### 2.1. practice 4 (Iris Data)
-<img src='image/pr4.png'></img>
+<img src='image/pr4.png' style= 'height: 300px'></img>
     
     - Topic: 아이리스
     1) Feature : 
@@ -78,7 +78,7 @@
 
 ### 3. Unsupervised Learning<hr>
 #### 3.1. practice 5 (Iris Data)
-<img src='image/pr5.png'></img>
+<img src='image/pr5.png' style= 'height: 150px'></img>
     
     - Topic: 아이리스
     - ML method: 
