@@ -17,7 +17,7 @@ This space is to record what I've learned from MS AI School program
 - Day 12. &nbsp;&nbsp;[Python. Flask & Web Crawling & Azure SQL Database](https://github.com/yeoiksu/Microsoft-AI-School/tree/main/22.10.20_d12_flask_webCrawling_database)
 - Day 13. &nbsp;&nbsp;[Python. Data Preprocessiong & Azure Virtual Machine](https://github.com/yeoiksu/Microsoft-AI-School/tree/main/22.10.21_d13_data_preprocessing)
 - Day 14. &nbsp;&nbsp;[Career Mentoring I](https://github.com/yeoiksu/Microsoft-AI-School/tree/main/22.10.24_d14_career_mentoring_1)
-- Day 15. &nbsp;&nbsp;[Machine Learning & Orange3](https://github.com/yeoiksu/Microsoft-AI-School/tree/main/22.10.26_d16_ml_orange3)
+- Day 15. &nbsp;&nbsp;[ML. Machine Learning의 기본 이론 &  Orange3](https://github.com/yeoiksu/Microsoft-AI-School/tree/main/22.10.26_d16_ml_orange3)
 
 
 :link: More about [MS AI SCHOOL](https://msaischool.kr/) 

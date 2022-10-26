@@ -57,33 +57,32 @@
 #### 1.2. practice 2 (Titanic Data)
 <img src='image/pr2.png' style= 'height: 300px'></img>
 
-    - Topic: 타이타닉 
-    1) Feature : 
-    2) target : 
+    - Topic: 타이타닉 생존자 여부
+    1) Feature : status(등급), age(나이), sex(성)
+    2) target : survived(생사여부)
 
 #### 1.3. practice 3 (Housing Data)
 <img src='image/pr3.png' style= 'height: 300px'></img>
     
     - Topic: 보스턴 집 값 예측
-    1) Feature : crim(범죄율), 등 13개
-    2) target : medv(집값)
+    1) Feature : crim(범죄율), rm(방의 수) 등 13개
+    2) target : medv(주택 가격 중앙값)
 
 ### 2. Classification<hr>
 #### 2.1. practice 4 (Iris Data)
 <img src='image/pr4.png' style= 'height: 300px'></img>
     
-    - Topic: 아이리스
-    1) Feature : 
-    2) target : 
+    - Topic: 아이리스의 종류 구분
+    1) Feature : sepal length(받침 너비) 등 4개
+    2) target : setosa, versicolor, virginica (꽃의 종류 3가지)
 
 ### 3. Unsupervised Learning<hr>
 #### 3.1. practice 5 (Iris Data)
 <img src='image/pr5.png' style= 'height: 150px'></img>
     
-    - Topic: 아이리스
-    - ML method: 
-    1) Feature : 
-    2) target : 
+    - Topic: 아이리스의 종류 구분
+    1) Feature : sepal length(받침 너비) 등 4개
+    2) target : setosa, versicolor, virginica (꽃으 종류 3가지)
 
 
 
