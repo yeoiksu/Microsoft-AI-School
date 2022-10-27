@@ -2,14 +2,14 @@
 
 ### I. Orange3를 이용한 Image & Text Data 분석
 #### 1. Image (Dog & Cat)
-<img src='graph/pr1.png' style= 'height: 400px'></img>
+<img src='graph/pr1.PNG' style= 'height: 400px'></img>
 
     - Topic: Classification on Dogs & Cats image data
     1) Feature : 강아지, 고양이 image 20장씩 총 40장 
     2) target : Classification (강아지&고양이)
 
 #### 2. NLP (grim tales data & wikipedia)
-<img src='graph/pr2.png'></img>
+<img src='graph/pr2.PNG'></img>
 
     - Topic: NLP on wikipedia & grim tales data
     1) Data : 자연어 (tales, wikipedia) 

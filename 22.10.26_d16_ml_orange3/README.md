@@ -48,21 +48,21 @@
 ### -  Orange3를 이용한 Data 분석
 #### 1. Regression<hr>
 #### 1.1. pratice 1 (Custom Data)
-<img src='image/pr1.png' style= 'height: 200px'></img>
+<img src='image/pr1.PNG' style= 'height: 200px'></img>
 
     - Topic: y값 예측
     1) Feature : 근속 년차
     2) target : 연봉
 
 #### 1.2. practice 2 (Titanic Data)
-<img src='image/pr2.png' style= 'height: 300px'></img>
+<img src='image/pr2.PNG' style= 'height: 300px'></img>
 
     - Topic: 타이타닉 생존자 여부
     1) Feature : status(등급), age(나이), sex(성)
     2) target : survived(생사여부)
 
 #### 1.3. practice 3 (Housing Data)
-<img src='image/pr3.png' style= 'height: 300px'></img>
+<img src='image/pr3.PNG' style= 'height: 300px'></img>
     
     - Topic: 보스턴 집 값 예측
     1) Feature : crim(범죄율), rm(방의 수) 등 13개
@@ -70,7 +70,7 @@
 
 ### 2. Classification<hr>
 #### 2.1. practice 4 (Iris Data)
-<img src='image/pr4.png' style= 'height: 300px'></img>
+<img src='image/pr4.PNG' style= 'height: 300px'></img>
     
     - Topic: 아이리스의 종류 구분
     1) Feature : sepal length(받침 너비) 등 4개
@@ -78,7 +78,7 @@
 
 ### 3. Unsupervised Learning<hr>
 #### 3.1. practice 5 (Iris Data)
-<img src='image/pr5.png' style= 'height: 150px'></img>
+<img src='image/pr5.PNG' style= 'height: 150px'></img>
     
     - Topic: 아이리스의 종류 구분
     1) Feature : sepal length(받침 너비) 등 4개
