@@ -1,4 +1,4 @@
-# Day17. Machine Learning & Orange Data Mining
+# Day17. ML. Orange Data Mining & Scikit Learn
 
 ### I. Orange3를 이용한 Image & Text Data 분석
 #### 1. Image (Dog & Cat)
