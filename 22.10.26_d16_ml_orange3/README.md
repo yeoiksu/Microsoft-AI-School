@@ -34,7 +34,7 @@
 ### - Data 분류
     1. Features(특징): 문제, 입력되는 정보
     2. Label(라벨): 정답, 예측을 하고자 하는 대상 항목
-<img src='image/data.png' style= 'width: 400px'></img><hr>
+<img src='image/data.PNG' style= 'width: 400px'></img><hr>
 
 ## 3. Orange3을 활용한 Data Mining (Only for today)
 - 데이터에 대한 기본지식이 없이도 데이터 처리 및 시각화하고 머신러닝을 적용해 볼 수 있는 도구
