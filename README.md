@@ -20,7 +20,7 @@ This space is to record what I've learned from MS AI School program
 - Day 15. &nbsp;&nbsp;[ML. Machine Learning의 기본 이론 &  Orange3](https://github.com/yeoiksu/Microsoft-AI-School/tree/main/22.10.26_d16_ml_orange3)
 - Day 16. &nbsp;&nbsp;[ML. Machine Learning의 기본 이론 &  Orange3](https://github.com/yeoiksu/Microsoft-AI-School/tree/main/22.10.26_d16_ml_orange3)
 - Day 17. &nbsp;&nbsp;[ML. Orange3 & Scikit-learn](https://github.com/yeoiksu/Microsoft-AI-School/tree/main/22.10.27_d17_ml_scikit_learn)
-- Day 18. &nbsp;&nbsp;[ML. Scikit-learn & Unsupervised Learning](https://github.com/yeoiksu/Microsoft-AI-School/tree/main/22.10.28_d18_ml_unsupervised)
+- Day 18. &nbsp;&nbsp;[ML. Unsupervised Learning(Scikit-learn) & Azure Virtual Network](https://github.com/yeoiksu/Microsoft-AI-School/tree/main/22.10.28_d18_ml_unsupervised)
 
 
 :link: More about [MS AI SCHOOL](https://msaischool.kr/) 
