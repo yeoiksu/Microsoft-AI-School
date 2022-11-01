@@ -24,7 +24,7 @@ This space is to record what I've learned from MS AI School program
 - Day 19. &nbsp;&nbsp;[DL. Deep learning의 기초 & Keras 기초](https://github.com/yeoiksu/Microsoft-AI-School/tree/main/22.10.31_d19_deep_learning)
 
 ### :lemon: November
-- Day 20. &nbsp;&nbsp;[DL. Deep learning](https://github.com/yeoiksu/Microsoft-AI-School/tree/main/ )
+- Day 20. &nbsp;&nbsp;[DL. Deep learning & Neural Network](https://github.com/yeoiksu/Microsoft-AI-School/tree/main/22.11.01_d20_deep_learning)
 
 
 :link: More about [MS AI SCHOOL](https://msaischool.kr/) 
