@@ -25,6 +25,7 @@ This space is to record what I've learned from MS AI School program
 
 ### :lemon: November
 - Day 20. &nbsp;&nbsp;[DL. Deep learning & Neural Network](https://github.com/yeoiksu/Microsoft-AI-School/tree/main/22.11.01_d20_deep_learning)
+- Day 21. &nbsp;&nbsp;[DL. Deep Learning & Convolutional Neural Network](https://github.com/yeoiksu/Microsoft-AI-School/tree/main/22.11.02_d21_deep_learning)
 
 
 :link: More about [MS AI SCHOOL](https://msaischool.kr/) 
