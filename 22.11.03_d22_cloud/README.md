@@ -7,8 +7,8 @@
     1.4. [Docker에 push 하기 ](#14-docker에-push-하기)<br>
     
 2. [Kubernetes 사용하기](#2-kubernetes-사용하기)<br>
-    2.1. [미니큐브 다운받고 웹 통신하기](#21-미니큐브-다운받고-웹-통신하기)<br>
-    2.2. [yaml 파일 생성](#22-yaml-파일-생성)<br>
+    2.1. [Minikube 다운받고 웹 통신하기](#21-Minikube-다운받고-웹-통신하기)<br>
+    2.2. [yaml 파일 생성](#22-yaml-파일-생성-pod-deployment-service-pvc)<br>
 <hr>
 
 ## 1. VM에서 Linux (Ubuntu)와 Docker 구현하기
@@ -146,14 +146,15 @@
 - 컨테이너화된 workload와 service를 관리하기 위한 이식성이 있고, 확장가능한 오픈소스 플랫폼이다. 
 - 수많은 workload와 효율적으로 관리
 - 쿠버네티스는 컴퓨터들을 연결하여 단일 형상으로 동작하도록 컴퓨팅 클러스터를 구성하고 높은 가용성을 제공하도록 조율
-![Kubernetes 구조](https://losskatsu.github.io/assets/images/infra/kubernetes/kubernetes01.jpg)
-(출처: https://losskatsu.github.io/it-infra/kubernetes01/#)
 
-### 2.1. 미니큐브 다운받고 웹 통신하기 
-#### 1) 미니큐브 다운로드
-    [1] 미니큐브 다운로드
+<center><img src="https://losskatsu.github.io/assets/images/infra/kubernetes/kubernetes01.jpg" style='width: 70%'><br>
+(출처: https://losskatsu.github.io/it-infra/kubernetes01/#)</center>
+
+### 2.1. Minikube 다운받고 웹 통신하기 
+#### 1) Minikube 다운로드
+    [1] Minikube 다운로드
         > curl -LO http://storage.googleapis.com/minikube/releases/v1.22.0/minikube-linux-amd64
-    [2] 미니큐브를 뒤에 파일 location에 설치
+    [2] Minikube를 뒤에 파일 location에 설치
         > sudo install minikube-linux-amd64 /usr/local/bin/minikube
     [3] 설치 확인
         > minikube --help
@@ -168,18 +169,18 @@
         > kubectl --help
     [4] 버전 확인
         > kubectl version
- #### 3) 미니큐브 실행
-    [1] 미니큐브 실행
+ #### 3) Minikube 실행
+    [1] Minikube 실행
         > minikube start --driver=docker
     [2] 상태 확인
         > minikube status
     [3] 시스탬용 pod 확인하기
         > kubectl get pod -n kube-system
-    [4] 미니큐브 삭제하기
+    [4] Minikube 삭제하기
         > minikube delete
-### 2.2. yaml 파일 생성
+### 2.2. yaml 파일 생성 (pod, deployment, service, pvc)
 #### 1) Pod 생성
-    [1] 미니큐브 다시 생성
+    [1] Minikube 다시 생성
         > minikube start --driver=docker
     [2]  yaml 파일 생성 (Pod)
         > vi pod.yaml        
