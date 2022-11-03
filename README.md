@@ -1,5 +1,6 @@
 # :school:Microsoft AI School:school:
 This space is to record what I've learned from MS AI School program 
+:link: More about [MS AI SCHOOL](https://msaischool.kr/) 
 
 ## :memo: Today I Learned 
 ### :apple: October
@@ -26,14 +27,12 @@ This space is to record what I've learned from MS AI School program
 ### :lemon: November
 - Day 20. &nbsp;&nbsp;[DL. Deep learning & Neural Network](https://github.com/yeoiksu/Microsoft-AI-School/tree/main/22.11.01_d20_deep_learning)
 - Day 21. &nbsp;&nbsp;[DL. Deep Learning & Convolutional Neural Network](https://github.com/yeoiksu/Microsoft-AI-School/tree/main/22.11.02_d21_deep_learning)
+- Day 22. &nbsp;&nbsp;[Cloud & Security](https://github.com/yeoiksu/Microsoft-AI-School/tree/main/22.11.03_d22_cloud)
 
 
-:link: More about [MS AI SCHOOL](https://msaischool.kr/) 
 
 <!--
 - DAY 100. [Python. Pandas & Matplotlib Pyplot]()
-
-
 ### :banana: December
 ### :peach: January
 ### :grapes: February
