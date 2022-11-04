@@ -7,7 +7,7 @@
     [3] <기본> 이름, 지역 설정
     [4] 검토 + 만들기
     [5] 생성 이후 리소스로 이동
-    [6] 아래의 'Studio 시작하기' 클릭
+    [6] 아래의 'Launch Studio' 클릭
 ### 1.2. "Azure Machine Learning" 사용하기
     1) "Notebooks" 사용하기
         [1] ipynb 노트북 파일 생성
