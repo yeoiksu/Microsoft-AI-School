@@ -29,6 +29,7 @@ This space is to record what I've learned from MS AI School program
 - Day 21. &nbsp;&nbsp;[DL. Deep Learning & Convolutional Neural Network](https://github.com/yeoiksu/Microsoft-AI-School/tree/main/22.11.02_d21_deep_learning)
 - Day 22. &nbsp;&nbsp;[Azure. Cloud & Docker & Kubernetes](https://github.com/yeoiksu/Microsoft-AI-School/tree/main/22.11.03_d22_cloud)
 - Day 23. &nbsp;&nbsp;[Azure. Automated ML & Notebook & WordPress](https://github.com/yeoiksu/Microsoft-AI-School/tree/main/22.11.04_d23_azure)
+- Day 24. &nbsp;&nbsp;[Azure. Storage (Blob & File Share)](https://github.com/yeoiksu/Microsoft-AI-School/tree/main/22.11.04_d24_azure)
 
 
 <!--
