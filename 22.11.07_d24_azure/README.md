@@ -1,4 +1,4 @@
-# Day23. Azure. Storage (Blob & File Share)
+# Day23. Azure. Storage (Blob & Storage & File Share)
 ## 1. Storage Account (스토리지 계정)
 - 비정형 및 반정형 데이터를 저장하는 저장소
 - 뛰어난 내구성과 가용성을 제공
@@ -50,6 +50,7 @@
         [2] Windwos 11 VM 생성 후 가상머신에 접속
         [3] Powershell 실행 후 복사한 스크립트를 붙여넣기
         [4] 파일에서 새로운 bird 드라이브가 생성되고 사진이 업로드 된 것을 확인할 수 있다. 
+        
     3) script를 직접 줘서 파일 공유하기
         [1] 공유받은 스크립트를 powershell에 직접 입력
         (기존의 연결을 끊은 후 시도해야함!!! )
