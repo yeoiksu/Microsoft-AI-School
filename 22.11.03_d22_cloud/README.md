@@ -1,4 +1,4 @@
-# Day22. Cloud. Docker & Kubernetes  
+# Day22. Azure. Cloud & Docker & Kubernetes  
 ## Index.
 1. [VM에서 Linux (Ubuntu)와 Docker 구현하기](#1-vm에서-linux-ubuntu와-docker-구현하기) <br>
     1.1. [Ubuntu Server 생성](#11-ubuntu-server-생성) <br>

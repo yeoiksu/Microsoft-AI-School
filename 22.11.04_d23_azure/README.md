@@ -1,4 +1,4 @@
-# Day23. ML.
+# Day23. Azure. Automated ML & Notebook & WordPress
 ## 1. Azure Machine Learning 사용하기
 ### 1.1. "Azure Machine Learning" 생성 & Dataset 설정
     [1]  + 리소스 만들기
