@@ -58,35 +58,35 @@
 
 ## 4. Data
 - Data 종류:
-1) 구조화: xlsv, csv, yaml 
-2) 반구조화: 
-3) 비구조화: 이미지 동영상
+    1) 구조화: xlsv, csv, yaml 
+    2) 반구조화: 
+    3) 비구조화: 이미지 동영상
 
 - Data 처리방법: 
-1) OLTP (온라인 Transaction 거래 처리) : 데이터는 한번의 transaction으로 저장 (한번에 묶어서 처리함 -> Locking -> BUT "Dead Lock" 초래 가능 !!)
-2) OLAP (온라인 Analytics 분석 처리)   : 데이터는 큐브에 주기적으로 로드, 집계, 저장 (필요한 datat를 뽑아 -> Data Cube)
+    1) OLTP (온라인 Transaction 거래 처리) : 데이터는 한번의 transaction으로 저장 (한번에 묶어서 처리함 -> Locking -> BUT "Dead Lock" 초래 가능 !!)
+    2) OLAP (온라인 Analytics 분석 처리)   : 데이터는 큐브에 주기적으로 로드, 집계, 저장 (필요한 datat를 뽑아 -> Data Cube)
 
 - 트랙젝션 워크로드 (영-원-일-격)
-1) 원자성 : 완전히 성공 / 실패하는 단일단위
-2) 일괄성 : 유효 상태 간에만 전환 (다른 사람이 transaction하는 순간 locking)
-3) 격리   : 동시에 실행해도 동일 상태로 유지 (동시에 해도 충돌 X, isolate)
-4) 영속성 : 커밋된(끝난) transcation은 커밋된 상태로 저장
+    1) 원자성 : 완전히 성공 / 실패하는 단일단위
+    2) 일괄성 : 유효 상태 간에만 전환 (다른 사람이 transaction하는 순간 locking)
+    3) 격리   : 동시에 실행해도 동일 상태로 유지 (동시에 해도 충돌 X, isolate)
+    4) 영속성 : 커밋된(끝난) transcation은 커밋된 상태로 저장
 
 - 분석 워크로드 : 데이터 분석 및 의사 결정에 사용
-1) 요약
-2) 추세
-3) 비즈니스 정보 (BI) : Tableau -> 데이터 시각화
+    1) 요약
+    2) 추세
+    3) 비즈니스 정보 (BI) : Tableau -> 데이터 시각화
 
 - Data 처리 : 원시 데이터를 의미있는 정보로 전환
-1) 일괄 처리 (Batch Processing) :  일정 이상 데이터가 모이면 한번에 처리
-2) 스트림 처리 (Stream Procesisng) : 새 데이터가 도착하면 처리
+    1) 일괄 처리 (Batch Processing) :  일정 이상 데이터가 모이면 한번에 처리
+    2) 스트림 처리 (Stream Procesisng) : 새 데이터가 도착하면 처리
 
 - Data의 역할
-1) Database 관리자 : Database 자체를 관리 (보안, 백업, 사용자 access, 성능 모니터링)
-2) Data 엔지니어 : Data를 관리 (pipeline, 수집, 분석용 데이터, 분석처리를 위한 준비)
-3) Data 분석가 : Data를 분석 (상관관계, 시각적, 데이터 모델링, 데이터 결합)
+    1) Database 관리자 : Database 자체를 관리 (보안, 백업, 사용자 access, 성능 모니터링)
+    2) Data 엔지니어 : Data를 관리 (pipeline, 수집, 분석용 데이터, 분석처리를 위한 준비)
+    3) Data 분석가 : Data를 분석 (상관관계, 시각적, 데이터 모델링, 데이터 결합)
 
-1) 데이터베이스 관리자
-    - Azure Data Studio : Windows, macOS, Linux 실행
-    - SQL Server Management Studio (SSMS) : Windows에서 실행, 포괄적인 관리도구 
-    - Azure Portal / CLI
+    1) Database 관리자
+        - Azure Data Studio : Windows, macOS, Linux 실행
+        - SQL Server Management Studio (SSMS) : Windows에서 실행, 포괄적인 관리도구 
+        - Azure Portal / CLI
