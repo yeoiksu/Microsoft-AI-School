@@ -32,6 +32,7 @@ This space is to record what I've learned from MS AI School program
 - Day 23. &nbsp;&nbsp;[Azure. Automated ML & Notebook & WordPress](https://github.com/yeoiksu/Microsoft-AI-School/tree/main/22.11.04_d23_azure)
 - Day 24. &nbsp;&nbsp;[Azure. Storage (Blob & File)](https://github.com/yeoiksu/Microsoft-AI-School/tree/main/22.11.07_d24_azure)
 - Day 25. &nbsp;&nbsp;[Azure. Storage (Queue) & Event Hubs & IoT Hub ](https://github.com/yeoiksu/Microsoft-AI-School/tree/main/22.11.08_d25_azure)
+- Day 26. &nbsp;&nbsp;[Azure. IoT Hub & Stream Analytics Job & MS SQL Database](https://github.com/yeoiksu/Microsoft-AI-School/tree/main/22.11.09_d26_azure)
 
 
 <!--

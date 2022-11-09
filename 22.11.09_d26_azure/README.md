@@ -16,6 +16,7 @@
 <hr>
 
 ## 2. Data Flow (Stream) 만들기 
+![Data Flow](dataflow.PNG)
 - Stream Analytics Job >> Blob Storage >> Azure SQL Databse
 
 ### 2.1 Stream Analytics Job 만들기
@@ -37,11 +38,55 @@
  <hr>
 
 ## 3. Database
-### 3.1. Data
+### 3.1. Database 만들기
+    [1] 리소스 만들기
+    [2] 'SQL Server' (파란색 SasS, 빨간색 IaaS) 검색 >> 'Azure SQL' >> 'SQL Database (Single DB) >> Create
+    [3] <기본> 
+        이름 , DB이름, Server(새로 만들기) -> 인증방법 (모두 사용), AD 관리자 설정
+    <네트워크> 
+        연결방법(Public/Private) >> Public 선택 >> Default 
+    [4] crate >> 리소스로 이동
+    [5] 상단의 "Set server firewall" (서버 방화벽 설정) >> 방화벽 규칙 >> 클라이언트 추가 >> 설정에 따라 범위 허용 가능
+
+### 3.2. Widnows 가상환경에서 Azure Data Studio 설치 & 실행하기
+    [1] https://learn.microsoft.com/en-us/sql/azure-data-studio/download-azure-data-studio?view=sql-server-ver16 로 들어가서 설치파일 다운로드 >> Download
+    [2] Azure Data Studio 실행 >> "Create Connection"
+    [3] Server 이름:  Azue Portal >> SQLDatabase >> Overview >> "Server Name" 복붙
+        Authentication type: SQL Login >> 아이디, 비밀번호 입력 >> Connect >> 성공 !!
+
+<hr>
+
+## 4. Data
 - Data 종류:
-1) 구조화: csv, yaml, 
+1) 구조화: xlsv, csv, yaml 
 2) 반구조화: 
 3) 비구조화: 이미지 동영상
+
 - Data 처리방법: 
 1) OLTP (온라인 Transaction 거래 처리) : 데이터는 한번의 transaction으로 저장 (한번에 묶어서 처리함 -> Locking -> BUT "Dead Lock" 초래 가능 !!)
 2) OLAP (온라인 Analytics 분석 처리)   : 데이터는 큐브에 주기적으로 로드, 집계, 저장 (필요한 datat를 뽑아 -> Data Cube)
+
+- 트랙젝션 워크로드 (영-원-일-격)
+1) 원자성 : 완전히 성공 / 실패하는 단일단위
+2) 일괄성 : 유효 상태 간에만 전환 (다른 사람이 transaction하는 순간 locking)
+3) 격리   : 동시에 실행해도 동일 상태로 유지 (동시에 해도 충돌 X, isolate)
+4) 영속성 : 커밋된(끝난) transcation은 커밋된 상태로 저장
+
+- 분석 워크로드 : 데이터 분석 및 의사 결정에 사용
+1) 요약
+2) 추세
+3) 비즈니스 정보 (BI) : Tableau -> 데이터 시각화
+
+- Data 처리 : 원시 데이터를 의미있는 정보로 전환
+1) 일괄 처리 (Batch Processing) :  일정 이상 데이터가 모이면 한번에 처리
+2) 스트림 처리 (Stream Procesisng) : 새 데이터가 도착하면 처리
+
+- Data의 역할
+1) Database 관리자 : Database 자체를 관리 (보안, 백업, 사용자 access, 성능 모니터링)
+2) Data 엔지니어 : Data를 관리 (pipeline, 수집, 분석용 데이터, 분석처리를 위한 준비)
+3) Data 분석가 : Data를 분석 (상관관계, 시각적, 데이터 모델링, 데이터 결합)
+
+1) 데이터베이스 관리자
+    - Azure Data Studio : Windows, macOS, Linux 실행
+    - SQL Server Management Studio (SSMS) : Windows에서 실행, 포괄적인 관리도구 
+    - Azure Portal / CLI
