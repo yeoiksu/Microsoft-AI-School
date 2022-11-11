@@ -34,6 +34,7 @@ This space is to record what I've learned from MS AI School program
 - Day 25. &nbsp;&nbsp;[Azure. Storage (Queue) & Event Hubs & IoT Hub ](https://github.com/yeoiksu/Microsoft-AI-School/tree/main/22.11.08_d25_azure)
 - Day 26. &nbsp;&nbsp;[Azure. IoT Hub & Stream Analytics Job & MS SQL Database](https://github.com/yeoiksu/Microsoft-AI-School/tree/main/22.11.09_d26_azure)
 - Day 27. &nbsp;&nbsp;[Azure. ADO.NET & CRUD](https://github.com/yeoiksu/Microsoft-AI-School/tree/main/22.11.10_d27_azure)
+- Day 28. &nbsp;&nbsp;[Microsoft Lincense](https://github.com/yeoiksu/Microsoft-AI-School/tree/main/22.11.11_d28_ms_lincense)
 
 
 <!--

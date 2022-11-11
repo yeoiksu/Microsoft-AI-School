@@ -1,0 +1,14 @@
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE [dbo].[VIPmembers](
+	[member_id] [int] IDENTITY(1,1) NOT NULL,
+	[member_name] [varchar](200) NOT NULL,
+	[member_email] [varchar](100) NULL,
+	[member_phone] [varchar](25) NULL,
+	[regi_date] [smalldatetime] NULL
+) ON [PRIMARY]
+GO
+ALTER TABLE [dbo].[VIPmembers] ADD  DEFAULT (getdate()) FOR [regi_date]
+GO
