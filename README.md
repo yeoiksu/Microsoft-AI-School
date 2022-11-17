@@ -34,10 +34,11 @@ This space is to record what I've learned from MS AI School program
 - Day 25. &nbsp;&nbsp;[Azure. Storage (Queue) & Event Hubs & IoT Hub ](https://github.com/yeoiksu/Microsoft-AI-School/tree/main/22.11.08_d25_azure)
 - Day 26. &nbsp;&nbsp;[Azure. IoT Hub & Stream Analytics Job & MS SQL Database](https://github.com/yeoiksu/Microsoft-AI-School/tree/main/22.11.09_d26_azure)
 - Day 27. &nbsp;&nbsp;[Azure. ADO.NET & CRUD](https://github.com/yeoiksu/Microsoft-AI-School/tree/main/22.11.10_d27_azure)
-- Day 28. &nbsp;&nbsp;[Microsoft Lincense](https://github.com/yeoiksu/Microsoft-AI-School/tree/main/22.11.11_d28_ms_lincense)
-- Day 29. &nbsp;&nbsp;[Microsoft Lincense](https://github.com/yeoiksu/Microsoft-AI-School/tree/main/22.11.14_d29_ms_lincense)
-- Day 30. &nbsp;&nbsp;[Microsoft Lincense](https://github.com/yeoiksu/Microsoft-AI-School/tree/main/22.11.15_d30_ms_lincense)
-- Day 31. &nbsp;&nbsp;[Microsoft Lincense](https://github.com/yeoiksu/Microsoft-AI-School/tree/main/22.11.16_d31_ms_lincense)
+- Day 28. &nbsp;&nbsp;[Microsoft Lincense. AI-900](https://github.com/yeoiksu/Microsoft-AI-School/tree/main/22.11.11_d28_ms_lincense)
+- Day 29. &nbsp;&nbsp;[Microsoft Lincense. AI-900](https://github.com/yeoiksu/Microsoft-AI-School/tree/main/22.11.14_d29_ms_lincense)
+- Day 30. &nbsp;&nbsp;[Microsoft Lincense. AI-900 & DP-900](https://github.com/yeoiksu/Microsoft-AI-School/tree/main/22.11.15_d30_ms_lincense)
+- Day 31. &nbsp;&nbsp;[Microsoft Lincense. DP-900](https://github.com/yeoiksu/Microsoft-AI-School/tree/main/22.11.16_d31_ms_lincense)
+- Day 32. &nbsp;&nbsp;[Microsoft Lincense. DP-900](https://github.com/yeoiksu/Microsoft-AI-School/tree/main/22.11.17_d32_ms_lincense)
 
 <!--
 - DAY 100. [Python. Pandas & Matplotlib Pyplot]()
