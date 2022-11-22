@@ -41,6 +41,7 @@ This space is to record what I've learned from MS AI School program
 - Day 32. &nbsp;&nbsp;[Microsoft Lincense. DP-900](https://github.com/yeoiksu/Microsoft-AI-School/tree/main/22.11.17_d32_ms_lincense)
 - Day 33. &nbsp;&nbsp;[Career Mentoring II](https://github.com/yeoiksu/Microsoft-AI-School/tree/main/22.11.18_d33_career_mentoring_2)
 - Day 34. &nbsp;&nbsp;[NLP. Tokenizer & Transformer](https://github.com/yeoiksu/Microsoft-AI-School/tree/main/22.11.21_d34_townhall_meeting_2)
+- Day 35. &nbsp;&nbsp;[Statistics. Pandas & Dataframe & Visualization](https://github.com/yeoiksu/Microsoft-AI-School/tree/main/22.11.22_d35_statistics)
 
 <!--
 - DAY 100. [Python. Pandas & Matplotlib Pyplot]()
