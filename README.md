@@ -43,6 +43,7 @@ This space is to record what I've learned from MS AI School program
 - Day 34. &nbsp;&nbsp;[NLP. Tokenizer & Transformer](https://github.com/yeoiksu/Microsoft-AI-School/tree/main/22.11.21_d34_townhall_meeting_2)
 - Day 35. &nbsp;&nbsp;[Statistics. Pandas & Dataframe & Visualization](https://github.com/yeoiksu/Microsoft-AI-School/tree/main/22.11.22_d35_statistics)
 - Day 36. &nbsp;&nbsp;[Statistics. Probability](https://github.com/yeoiksu/Microsoft-AI-School/tree/main/22.11.23_d36_statistics)
+- Day 37. &nbsp;&nbsp;[Statistics. Multivariate Random Variable](https://github.com/yeoiksu/Microsoft-AI-School/tree/main/22.11.24_d37_statistics)
 
 <!--
 - DAY 100. [Python. Pandas & Matplotlib Pyplot]()
