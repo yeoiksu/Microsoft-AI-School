@@ -47,6 +47,7 @@ This space is to record what I've learned from MS AI School program
 - Day 38. &nbsp;&nbsp;[Statistics. Probability Distribution](https://github.com/yeoiksu/Microsoft-AI-School/tree/main/22.11.25_d38_statistics)
 - Day 39. &nbsp;&nbsp;[Statistics. Probability Distribution](https://github.com/yeoiksu/Microsoft-AI-School/tree/main/22.11.28_d39_statistics)
 - Day 40. &nbsp;&nbsp;[Statistics. Probability Distribution](https://github.com/yeoiksu/Microsoft-AI-School/tree/main/22.11.29_d40_statistics)
+- Day 41. &nbsp;&nbsp;[Statistics. Probability Distribution](https://github.com/yeoiksu/Microsoft-AI-School/tree/main/22.11.30_d41_statistics)
 
 <!--
 - DAY 100. [Python. Pandas & Matplotlib Pyplot]()
