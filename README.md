@@ -52,6 +52,7 @@ This space is to record what I've learned from MS AI School program
 ### :banana: December
 - Day 42. &nbsp;&nbsp;[Statistics. Perceptron](https://github.com/yeoiksu/Microsoft-AI-School/tree/main/22.12.01_d42_statistics)
 - Day 43. &nbsp;&nbsp;[Dataset. Concept & Practice](https://github.com/yeoiksu/Microsoft-AI-School/tree/main/22.12.02_d43_dataset)
+- Day 44. &nbsp;&nbsp;[Dataset. Numpy & Image(OpenCV)](https://github.com/yeoiksu/Microsoft-AI-School/tree/main/22.12.05_d44_dataset)
 
 <!--
 - DAY 100. [Python. Pandas & Matplotlib Pyplot]()
