@@ -54,7 +54,8 @@ This space is to record what I've learned from MS AI School program
 - Day 43. &nbsp;&nbsp;[Dataset. Concept & Practice](https://github.com/yeoiksu/Microsoft-AI-School/tree/main/22.12.02_d43_dataset)
 - Day 44. &nbsp;&nbsp;[Image. Numpy & OpenCV](https://github.com/yeoiksu/Microsoft-AI-School/tree/main/22.12.05_d44_image)
 - Day 45. &nbsp;&nbsp;[Image. OpenCV](https://github.com/yeoiksu/Microsoft-AI-School/tree/main/22.12.06_d45_image)
-
+- Day 46. &nbsp;&nbsp;[Image. OpenCV](https://github.com/yeoiksu/Microsoft-AI-School/tree/main/22.12.07_d46_image)
+- Day 47. &nbsp;&nbsp;[Image. OpenCV](https://github.com/yeoiksu/Microsoft-AI-School/tree/main/22.12.08_d47_image)
 <!--
 - DAY 100. [Python. Pandas & Matplotlib Pyplot]()
 
