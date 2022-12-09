@@ -72,11 +72,12 @@ for i in range(1, cols*rows +1):
 plt.show()
 
 #### 5. 바이너리 파일 img와 label인 csv파일로 저장
+## train csv 생성
 imgf = open(file_path + '/FashionMNIST/raw/train-images-idx3-ubyte', 'rb')
 imgd = imgf.read(16)
 lblf = open(file_path + '/FashionMNIST/raw/train-labels-idx1-ubyte', 'rb')
 lbuf = lblf.read(8)
-df_dict = {
+df_dict_train = {
     'file_name' : [],
     'label' : []
 }
@@ -92,14 +93,44 @@ while True:
     lbld = lblf.read(1)
     labels = np.frombuffer(lbld, dtype= np.uint8).astype(np.int64)
     file_name = f'{idx}.png'
-    cv2.imwrite(file_path +'/FashionMNIST/images/'+ file_name, image)
+    cv2.imwrite(file_path +'/FashionMNIST/train/'+ file_name, image)
     idx+=1
 
-    df_dict['label'].append(labels[0])
-    df_dict['file_name'].append(file_name)
+    df_dict_train['label'].append(labels[0])
+    df_dict_train['file_name'].append(file_name)
 
-df = pd.DataFrame(df_dict)
-print('생성된 dataframe\n', df.head())
-df.to_csv(file_path +'/FashionMNIST/annotation.csv')
+df_train = pd.DataFrame(df_dict_train)
+print('Train dataframe 생성\n', df_train.head())
+df_train.to_csv(file_path +'/FashionMNIST/annotation_train.csv')
 
-#### 6.
+## test csv 생성
+imgf = open(file_path + '/FashionMNIST/raw/t10k-images-idx3-ubyte', 'rb')
+imgd = imgf.read(16)
+lblf = open(file_path + '/FashionMNIST/raw/t10k-labels-idx1-ubyte', 'rb')
+lbuf = lblf.read(8)
+
+df_dict_test = {
+    'file_name' : [],
+    'label' : []
+}
+idx = 0
+# os.makedirs(file_path+'/FashionMNIST/images', exist_ok=True)  # 디렉토리 생성 
+while True:
+    imgd = imgf.read(img_size*img_size)
+    if not imgd:
+        break
+    data = np.frombuffer(imgd, dtype = np.uint8).astype(float)
+    data = data.reshape(1, img_size, img_size, 1)
+    image = np.asarray(data).squeeze()
+    lbld = lblf.read(1)
+    labels = np.frombuffer(lbld, dtype= np.uint8).astype(np.int64)
+    file_name = f'{idx}.png'
+    cv2.imwrite(file_path +'/FashionMNIST/test/'+ file_name, image)
+    idx+=1
+
+    df_dict_test['label'].append(labels[0])
+    df_dict_test['file_name'].append(file_name)
+
+df_test = pd.DataFrame(df_dict_test)
+df_test.to_csv(file_path +'/FashionMNIST/annotation_test.csv')
+print('Test dataframe 생성\n', df_test.head())
