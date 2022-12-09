@@ -3,7 +3,7 @@ import cv2
 import matplotlib.pyplot as plt
 
 # 이미지 경로
-image_path = "./2022.12/22.12.06_d45_image/data/cat.jpg"
+image_path = "./2022.12/12.06_d45_image/data/cat.jpg"
 
 ### 흑백 이미지 대비 높이기
 # 이미지 대비 높이기

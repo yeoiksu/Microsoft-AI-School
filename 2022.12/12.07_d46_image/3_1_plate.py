@@ -9,7 +9,7 @@ def imshow(src, windowName='show', close=True):
     if close:
         cv2.destroyAllWindows()
 
-image_path = "./2022.12/22.12.07_d46_image/data/car.png"
+image_path = "./2022.12/12.07_d46_image/data/car.png"
 img_ori = cv2.imread(image_path)
 '''
 channel : BGR

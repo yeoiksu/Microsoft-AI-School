@@ -2,7 +2,7 @@ import cv2
 import numpy as np
 import matplotlib.pyplot as plt
 
-image_path = "./2022.12/22.12.06_d45_image/data/billiards.jpg"
+image_path = "./2022.12/12.06_d45_image/data/billiards.jpg"
 image_gray = cv2.imread(image_path, cv2.IMREAD_GRAYSCALE)  # gray
 _ , mask = cv2.threshold(image_gray, 230, 255, cv2.THRESH_BINARY_INV)
 

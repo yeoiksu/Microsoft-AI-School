@@ -30,7 +30,7 @@ def selenium_scroll_option(driver):
 
 
 def main():
-    os.makedirs('./2022.12/22.12.09_d48_image/data/selenium', exist_ok=True)
+    os.makedirs('./2022.12/12.09_d48_image/data/selenium', exist_ok=True)
     N = 120
     search_list = ['T-Shirt', "Trouser", "Dress", "Bag", "Sandal"]
     # 브라우저 로딩 시간 고려한 시간
@@ -39,11 +39,10 @@ def main():
     driver.implicitly_wait(10)
 
     for search in search_list:
-
         ##### 1
         print("\n\n>>>>> ", search)
 
-        img_dir = f'./2022.12/22.12.09_d48_image/data/selenium/{search}'
+        img_dir = f'./2022.12/12.09_d48_image/data/selenium/{search}'
         os.makedirs(img_dir, exist_ok=True)
         driver.get('https://www.google.com')
         elem = driver.find_element(By.NAME, 'q')
@@ -91,16 +90,14 @@ def main():
         # csv 파일 생성
         ##### 3
         label_list = []
-        data_dir = './2022.12/22.12.09_d48_image/data/selenium/' + search
-        print(data_dir)
-
-        for label in os.listdir(data_dir):
-            label_list.append(label)
-
         df_dict = {
             'file_name' : [],
             'label' : []
         }
+        data_dir = './2022.12/12.09_d48_image/data/selenium/' + search
+
+        for label in os.listdir(data_dir):
+            label_list.append(label)
 
         for idx, label in enumerate(label_list):
             df_dict['file_name'].append(label)

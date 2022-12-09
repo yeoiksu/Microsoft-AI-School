@@ -5,8 +5,8 @@ from math import sqrt
 
 # 데이터 읽어오기
 # 1205 현재 위치 -> 2개 csv 존재, ex07.py
-movies = pd.read_csv("./2022.12/22.12.05_d44_image/data/movies.csv")
-ratings = pd.read_csv("./2022.12/22.12.05_d44_image/data/ratings.csv")
+movies = pd.read_csv("./2022.12/12.05.05_d44_image/data/movies.csv")
+ratings = pd.read_csv("./2022.12/12.05.05_d44_image/data/ratings.csv")
 
 # 아이템 기반 협업 필터링 구현
 data = pd.merge(ratings, movies, on="movieId")

@@ -1,7 +1,7 @@
 import cv2
 import matplotlib.pyplot as plt
 
-image_path = "./2022.12/22.12.06_d45_image/data/billiards.jpg"
+image_path = "./2022.12/12.06_d45_image/data/billiards.jpg"
 image = cv2.imread(image_path, cv2.IMREAD_GRAYSCALE)  # gray
 
 # 임계값 연산자의 출력을 마스크 라는 변수에 저장

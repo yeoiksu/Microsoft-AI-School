@@ -3,7 +3,7 @@ import matplotlib.pyplot as plt
 import numpy as np
 from pydicom.pixel_data_handlers.util import apply_modality_lut, apply_voi_lut
 
-file_path = "./2022.12/22.12.08_d47_image/data/ID_0000_AGE_0060_CONTRAST_1_CT.dcm"
+file_path = "./2022.12/12.08_d47_image/data/ID_0000_AGE_0060_CONTRAST_1_CT.dcm"
 window_center = -600
 window_width = 1600
 

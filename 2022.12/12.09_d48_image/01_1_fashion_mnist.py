@@ -7,7 +7,7 @@ from torch.utils.data import Dataset
 from torchvision import datasets
 from torchvision.transforms import ToTensor
 
-file_path = './2022.12/22.12.09_d48_image/data'
+file_path = './2022.12/12.09_d48_image/data'
 
 #### 1. 파일 다운로드
 training_data = datasets.FashionMNIST(

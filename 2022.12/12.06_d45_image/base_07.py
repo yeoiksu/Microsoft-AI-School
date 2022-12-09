@@ -4,7 +4,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 from utils import image_show
 
-image_path = "./2022.12/22.12.06_d45_image/data/car.jpg"
+image_path = "./2022.12/12.06_d45_image/data/car.jpg"
 image = cv2.imread(image_path)
 
 filter1 = np.array([[0, 1, 0], [0, 0, 0], [0, -1, 0]])

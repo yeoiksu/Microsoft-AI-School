@@ -3,8 +3,8 @@ import cv2
 import matplotlib.pyplot as plt
 import numpy as np
 
-large_img = cv2.imread("./2022.12/22.12.08_d47_image/data/1.png")
-watermark = cv2.imread("./2022.12/22.12.08_d47_image/data/2.png")
+large_img = cv2.imread("./2022.12/12.08_d47_image/data/1.png")
+watermark = cv2.imread("./2022.12/12.08_d47_image/data/2.png")
 
 # print("Large Image Size: ", large_img.shape)
 # print("Watermark Image Size: ", watermark.shape)

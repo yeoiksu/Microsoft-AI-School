@@ -1,7 +1,7 @@
 import cv2
 
 ## 1. 동영상 속성 확인
-video_path = "./2022.12/22.12.08_d47_image/data/video01.mp4"
+video_path = "./2022.12/12.08_d47_image/data/video01.mp4"
 cap = cv2.VideoCapture(video_path)
 width  = cap.get(cv2.CAP_PROP_FRAME_WIDTH)
 height = cap.get(cv2.CAP_PROP_FRAME_HEIGHT)

@@ -8,7 +8,7 @@ from torch.utils.data import Dataset
 import os
 from torchvision.io import read_image
 
-file_path = './2022.12/22.12.09_d48_image/data'
+file_path = './2022.12/12.09_d48_image/data'
 
 #### csv 파일을 읽어서 이미지 가져오는 데이터 셋 클래스 준비
 class CustomImageDataset(Dataset):

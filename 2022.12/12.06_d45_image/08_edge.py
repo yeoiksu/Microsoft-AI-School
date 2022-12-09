@@ -3,7 +3,7 @@ import numpy as np
 from utils import image_show
 
 # 이미지 경로
-image_path = "./2022.12/22.12.06_d45_image/data/test1.jpg"
+image_path = "./2022.12/12.06_d45_image/data/test1.jpg"
 image_read = cv2.imread(image_path)
 image_gray = cv2.cvtColor(image_read, cv2.COLOR_BGR2GRAY)
 

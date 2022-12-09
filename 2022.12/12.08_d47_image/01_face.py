@@ -1,10 +1,10 @@
 import cv2
 import numpy as np
 
-face_xml_path = "./2022.12/22.12.08_d47_image/data/haarcascade_frontalface_default.xml"
-eye_xml_path  = "./2022.12/22.12.08_d47_image/data/haarcascade_eye.xml"
-image_path1    = "./2022.12/22.12.08_d47_image/data/face.png"
-image_path2    = "./2022.12/22.12.08_d47_image/data/iksu.jpg"
+face_xml_path = "./2022.12/12.08_d47_image/data/haarcascade_frontalface_default.xml"
+eye_xml_path  = "./2022.12/12.08_d47_image/data/haarcascade_eye.xml"
+image_path1    = "./2022.12/12.08_d47_image/data/face.png"
+image_path2    = "./2022.12/12.08_d47_image/data/iksu.jpg"
 
 #### 1. face_casecase & eye_cascase objects 생성
 face_cascade = cv2.CascadeClassifier(face_xml_path)

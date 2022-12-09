@@ -2,7 +2,7 @@
 import cv2
 import numpy as np
 
-image_path = "./2022.12/22.12.06_d45_image/data/car.jpg"
+image_path = "./2022.12/12.06_d45_image/data/car.jpg"
 img = cv2.imread(image_path, 0)
 img_resize = cv2.resize(img, (320,240))
 

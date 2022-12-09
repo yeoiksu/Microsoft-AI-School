@@ -5,7 +5,7 @@ import numpy as np
 from utils import image_show
 
 # 이미지 경로
-image_path = "./2022.12/22.12.06_d45_image/data/cat.jpg"
+image_path = "./2022.12/12.06_d45_image/data/cat.jpg"
 
 # 이미지 읽기 처리
 image = cv2.imread(image_path)

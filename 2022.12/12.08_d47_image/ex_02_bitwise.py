@@ -40,8 +40,8 @@ plt.imshow(rec_not, cmap= 'gray')
 plt.show()
 
 # ex-04 마스킹 과제는 흰색대신 이미지를 넣어주시면 됩니다. (원하는 이미지 혹은 얼굴이미지)
-face_xml_path = "./2022.12/22.12.08_d47_image/data/haarcascade_frontalface_default.xml"
-image = cv2.imread("./2022.12/22.12.08_d47_image/data/faces.jpg")
+face_xml_path = "./2022.12/12.08_d47_image/data/haarcascade_frontalface_default.xml"
+image = cv2.imread("./2022.12/12.08_d47_image/data/faces.jpg")
 cv2.imshow("Original Image", image)
 cv2.waitKey(0)
 

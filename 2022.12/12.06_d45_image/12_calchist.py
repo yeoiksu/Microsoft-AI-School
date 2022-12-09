@@ -5,7 +5,7 @@ import matplotlib.pyplot as plt
 from utils import image_show
 
 # 이미지 경로
-image_path = "./2022.12/22.12.06_d45_image/data/cat.jpg"
+image_path = "./2022.12/12.06_d45_image/data/cat.jpg"
 image_bgr = cv2.imread(image_path)
 image_rgb = cv2.cvtColor(image_bgr, cv2.COLOR_BGR2RGB)
 features = []  # 특성 값을 담을 리스트

@@ -1,6 +1,6 @@
 import cv2
 
-img_path = "./2022.12/22.12.05_d44_image/data/cat.jpg"
+img_path = "./2022.12/12.05_d44_image/data/cat.jpg"
 img = cv2.imread(img_path)
 
 h, w , _ = img.shape

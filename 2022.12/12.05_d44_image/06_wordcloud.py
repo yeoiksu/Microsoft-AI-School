@@ -9,5 +9,5 @@ tag = [('cat', 120), ('dog', 50), ('python', 110), ('java', 70), ('DB', 10)]
 # 테그화
 tag_list = pytagcloud.make_tags(tag, maxsize=50)
 pytagcloud.create_tag_image(
-    tag_list, "./2022.12/22.12.05_d44_image/data/word_cloud.jpg", size=(900, 600), rectangular=False)
-webbrowser.open('22.12.05_d44_image/data/word_cloud.jpg')
+    tag_list, "./2022.12/12.05_d44_image/data/word_cloud.jpg", size=(900, 600), rectangular=False)
+webbrowser.open('2022.12/12.05_d44_image/data/word_cloud.jpg')

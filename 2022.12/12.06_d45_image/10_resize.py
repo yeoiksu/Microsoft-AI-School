@@ -2,7 +2,7 @@ import cv2
 from utils import image_show
 
 # 이미지 경로
-image_path = "./2022.12/22.12.06_d45_image/data/cat.jpg"
+image_path = "./2022.12/12.06_d45_image/data/cat.jpg"
 image = cv2.imread(image_path)
 
 # 10 x 10 변환

@@ -33,7 +33,7 @@ def blend_images(image, final_image, alpha=0.7, beta=1., gamma=0.):
 
 
 # 1. 이미지 불러오기
-image = cv2.imread('./2022.12/22.12.08_d47_image/data/last.png')
+image = cv2.imread('./2022.12/12.08_d47_image/data/last.png')
 
 # 2. grayscale
 gray_image = cv2.cvtColor(image, cv2.COLOR_RGB2GRAY)
