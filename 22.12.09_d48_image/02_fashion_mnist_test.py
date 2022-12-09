@@ -1,14 +1,10 @@
-import numpy as np
 import pandas as pd
-import matplotlib.pyplot as plt
-import cv2
 import torch
 import torch.nn as nn
 import torch.nn.functional as F
 import torch.optim as optim
 from torchvision import datasets, transforms
 from torch.utils.data import Dataset
-import json
 import os
 from torchvision.io import read_image
 
@@ -101,6 +97,7 @@ train_loader = torch.utils.data.DataLoader(dataset_train, batch_size=64, shuffle
 test_loader = torch.utils.data.DataLoader(dataset_test,
     batch_size=test_batch_size, shuffle=True, **kwargs)
 
+# model = torch.load(file_path +'/FashionMNIST/model.pt')
 model = Net().to(device)  # devce : cpu or gpu ?? 나는 cpu
 optimizer = optim.SGD(model.parameters(), lr= lr, momentum= momentum)
 
@@ -140,5 +137,6 @@ def test(log_interval, model, device, test_loader):
 for epoch in range(1, epochs+1):
     print(epoch)
     train(log_interval, model, device, train_loader, optimizer, epoch)
-    test(log_interval, model, device, test_loader)
+test(log_interval, model, device, test_loader)
+
 torch.save(model, file_path +'/FashionMNIST/model.pt')  # 가중치
