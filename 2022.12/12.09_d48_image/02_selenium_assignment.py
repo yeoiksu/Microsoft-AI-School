@@ -10,11 +10,9 @@ import os
 import urllib.request
 import pandas as pd 
 from collections import defaultdict
-# from selenium.webdriver.chrome.o
-
 
 def selenium_scroll_option(driver):
-    SCROLL_PAUSE_SEC = 5
+    SCROLL_PAUSE_SEC = 3
     # 스크롤 높이 가져옴
     last_height = driver.execute_script("return document.body.scrollHeight")
     while True:
@@ -28,7 +26,6 @@ def selenium_scroll_option(driver):
             break
         last_height = new_height
 
-
 def main():
     os.makedirs('./2022.12/12.09_d48_image/data/selenium', exist_ok=True)
     N = 120
@@ -39,9 +36,6 @@ def main():
     driver.implicitly_wait(10)
 
     for search in search_list:
-        ##### 1
-        print("\n\n>>>>> ", search)
-
         img_dir = f'./2022.12/12.09_d48_image/data/selenium/{search}'
         os.makedirs(img_dir, exist_ok=True)
         driver.get('https://www.google.com')
@@ -52,19 +46,15 @@ def main():
         assert "No results found." not in driver.page_source
 
         # 이미지 메뉴 누르기
-        # driver.find_element(By.XPATH, '/html/body/div[7]/div/div[4]/div/div[1]/div/div[1]/div/div[2]/a').click()
-        driver.find_element(By.XPATH, '//*[@id="hdtb-msb"]/div[1]/div/div[2]/a').click()  # 이미지
+        driver.find_element(By.XPATH, '//*[@id="hdtb-msb"]/div[1]/div/div[2]/a').click()
         selenium_scroll_option(driver)
 
-        # driver.find_element(By.XPATH, '//*[@id="islmp"]/div/div/div/div/div[1]/div[2]/div[2]/input').click()
-        # selenium_scroll_option(driver)
+        driver.find_element(By.XPATH, '//*[@id="islmp"]/div/div/div/div/div[1]/div[2]/div[2]/input').click()
+        selenium_scroll_option(driver)
         img_srcs = driver.find_elements(By.CLASS_NAME, 'rg_i')
 
         url_list = []
         last = 0
-
-        ##### 2 이미지 저장
-        print(search, " image start")
 
         for idx, img_src in enumerate(img_srcs):
             base64_image = img_src.get_attribute('src')
@@ -85,7 +75,7 @@ def main():
             if int(N) == idx:
                 break
         [urllib.request.urlretrieve(url, os.path.join(img_dir, str(last+i)+'.png')) for i, url in enumerate(set(url_list))]
-        print(len(set(url_list)))
+        # print(len(set(url_list)))
 
         # csv 파일 생성
         ##### 3
