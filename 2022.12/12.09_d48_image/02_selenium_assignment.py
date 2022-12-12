@@ -76,28 +76,27 @@ def main():
                 break
         [urllib.request.urlretrieve(url, os.path.join(img_dir, str(last+i)+'.png')) for i, url in enumerate(set(url_list))]
         # print(len(set(url_list)))
-
-        # csv 파일 생성
-        ##### 3
-        label_list = []
-        df_dict = {
-            'file_name' : [],
-            'label' : []
-        }
-        data_dir = './2022.12/12.09_d48_image/data/selenium/' + search
-
-        for label in os.listdir(data_dir):
-            label_list.append(label)
-
-        for idx, label in enumerate(label_list):
-            df_dict['file_name'].append(label)
-            df_dict['label'] = search
-
-        df = pd.DataFrame(df_dict)
-        df.to_csv(data_dir + '.csv')
-
     driver.close()
 
+def createDatabase():
+    # csv 파일 생성
+    ##### 3
+    label_list = []
+    df_dict = {
+        'file_name' : [],
+        'label' : []
+    }
+    data_dir = './2022.12/12.09_d48_image/data/selenium/' + search
+
+    for label in os.listdir(data_dir):
+        label_list.append(label)
+
+    for idx, label in enumerate(label_list):
+        df_dict['file_name'].append(label)
+        df_dict['label'] = search
+
+    df = pd.DataFrame(df_dict)
+    df.to_csv(data_dir + '.csv') 
 
 if __name__ =='__main__':
     main()
