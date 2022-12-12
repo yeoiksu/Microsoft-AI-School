@@ -94,6 +94,7 @@ while True:
     labels = np.frombuffer(lbld, dtype= np.uint8).astype(np.int64)
     file_name = f'{idx}.png'
     cv2.imwrite(file_path +'/FashionMNIST/train/'+ file_name, image)
+    
     idx+=1
 
     df_dict_train['label'].append(labels[0])
