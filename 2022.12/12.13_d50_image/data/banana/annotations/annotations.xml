@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<annotations>
+  <version>1.1</version>
+  <meta>
+    <job>
+      <id>49107</id>
+      <size>14</size>
+      <mode>annotation</mode>
+      <overlap>0</overlap>
+      <bugtracker></bugtracker>
+      <created>2022-12-13 03:46:21.478053+00:00</created>
+      <updated>2022-12-13 03:57:00.546160+00:00</updated>
+      <subset>default</subset>
+      <start_frame>0</start_frame>
+      <stop_frame>13</stop_frame>
+      <frame_filter></frame_filter>
+      <segments>
+        <segment>
+          <id>49107</id>
+          <start>0</start>
+          <stop>13</stop>
+          <url>https://app.cvat.ai/api/jobs/49107</url>
+        </segment>
+      </segments>
+      <owner>
+        <username>iksu1</username>
+        <email>iksuyeo@gmail.com</email>
+      </owner>
+      <assignee></assignee>
+      <labels>
+        <label>
+          <name>banana</name>
+          <color>#fafa37</color>
+          <type>any</type>
+          <attributes>
+          </attributes>
+        </label>
+        <label>
+          <name>apple</name>
+          <color>#fa3253</color>
+          <type>any</type>
+          <attributes>
+          </attributes>
+        </label>
+        <label>
+          <name>kiwi</name>
+          <color>#bed2df</color>
+          <type>any</type>
+          <attributes>
+          </attributes>
+        </label>
+      </labels>
+    </job>
+    <dumped>2022-12-13 04:22:44.037972+00:00</dumped>
+  </meta>
+  <image id="0" name="banana_0.jpg" width="283" height="178">
+    <box label="banana" occluded="0" source="manual" xtl="16.70" ytl="14.85" xbr="259.72" ybr="155.35" z_order="0">
+    </box>
+    <polygon label="banana" occluded="0" source="manual" points="18.89,16.80;59.31,62.33;151.11,91.80;255.09,67.69;251.19,108.11;196.65,147.56;123.11,152.67;63.45,128.81;39.59,93.75;43.24,65.26;22.30,37.01" z_order="0">
+    </polygon>
+  </image>
+  <image id="1" name="banana_1.jpg" width="720" height="864">
+    <polygon label="banana" occluded="0" source="manual" points="474.01,41.42;679.67,517.74;513.01,508.29;502.38,657.21;379.45,645.39;301.45,816.77;228.17,702.12;174.98,488.19;72.15,368.82;199.80,370.00;126.52,264.81;180.89,229.35;287.26,270.72;254.17,124.15;405.46,199.80;404.28,82.79" z_order="0">
+    </polygon>
+    <box label="banana" occluded="0" source="manual" xtl="74.51" ytl="24.87" xbr="686.76" ybr="817.96" z_order="0">
+    </box>
+  </image>
+  <image id="2" name="banana_10.jpg" width="1280" height="500">
+    <polygon label="banana" occluded="0" source="manual" points="752.08,60.33;780.46,144.52;814.51,185.20;736.94,343.19;508.00,400.90;380.28,377.25;334.87,317.65;408.66,290.22;600.71,275.08;702.88,210.75;747.35,153.04;731.26,64.11" z_order="0">
+    </polygon>
+    <box label="banana" occluded="0" source="manual" xtl="332.03" ytl="43.30" xbr="816.41" ybr="407.53" z_order="0">
+    </box>
+  </image>
+  <image id="3" name="banana_11.jpg" width="1200" height="809">
+    <box label="banana" occluded="0" source="manual" xtl="402.51" ytl="67.51" xbr="1140.68" ybr="737.06" z_order="0">
+    </box>
+    <polygon label="banana" occluded="0" source="manual" points="942.58,79.68;1056.57,240.15;1127.40,386.24;1073.17,626.39;925.98,693.90;894.99,677.30;825.27,716.04;711.28,712.72;575.15,731.53;455.63,681.73;424.64,566.63;476.66,500.23;406.93,410.59;426.85,301.02;493.26,270.03;574.05,277.78;655.94,209.17;685.82,163.79;755.55,191.46;887.24,94.07" z_order="0">
+    </polygon>
+  </image>
+  <image id="4" name="banana_12.jpg" width="288" height="175">
+    <box label="banana" occluded="0" source="manual" xtl="21.32" ytl="4.30" xbr="261.44" ybr="167.09" z_order="0">
+    </box>
+    <polygon label="banana" occluded="0" source="manual" points="42.39,16.99;77.82,5.02;107.98,16.99;139.34,17.47;158.95,37.58;190.55,46.67;202.54,70.61;243.24,100.78;233.19,116.58;259.52,139.08;247.79,157.03;180.04,155.84;89.07,152.97;44.30,164.94;17.49,154.40;25.39,98.86;21.56,48.83" z_order="0">
+    </polygon>
+  </image>
+  <image id="5" name="banana_13.jpg" width="1000" height="667">
+    <polygon label="banana" occluded="0" source="manual" points="501.36,64.76;677.46,183.37;692.98,372.25;619.98,492.69;553.37,520.07;386.39,608.58;289.67,573.90;236.75,573.90;236.75,541.97;197.52,522.80;326.17,311.12;458.48,172.42;457.56,92.13" z_order="0">
+    </polygon>
+    <box label="banana" occluded="0" source="manual" xtl="191.13" ytl="32.82" xbr="710.31" ybr="620.44" z_order="0">
+    </box>
+  </image>
+  <image id="6" name="banana_2.jpg" width="275" height="183">
+    <box label="banana" occluded="0" source="manual" xtl="47.50" ytl="3.26" xbr="197.45" ybr="178.75" z_order="0">
+    </box>
+    <polygon label="banana" occluded="0" source="manual" points="116.09,22.54;184.19,5.77;196.70,24.54;178.43,51.58;163.41,161.98;151.14,178.50;132.61,129.69;87.30,163.48;57.76,151.97;90.31,116.92;49.00,100.90;60.02,61.09" z_order="0">
+    </polygon>
+  </image>
+  <image id="7" name="banana_3.jpg" width="820" height="617">
+    <polygon label="banana" occluded="0" source="manual" points="70.25,483.67;309.12,238.89;551.36,170.52;729.45,224.54;817.23,280.25;813.86,514.05;551.36,575.67;432.35,551.19;346.25,538.53;380.86,436.40;210.36,520.80;73.63,523.34" z_order="0">
+    </polygon>
+    <box label="banana" occluded="0" source="manual" xtl="60.12" ytl="94.56" xbr="820.00" ybr="572.29" z_order="0">
+    </box>
+  </image>
+  <image id="8" name="banana_4.jpg" width="297" height="297">
+    <box label="banana" occluded="0" source="manual" xtl="37.78" ytl="39.00" xbr="272.62" ybr="240.11" z_order="0">
+    </box>
+  </image>
+  <image id="9" name="banana_5.jpg" width="450" height="253">
+  </image>
+  <image id="10" name="banana_6.jpg" width="640" height="427">
+    <box label="banana" occluded="0" source="manual" xtl="131.02" ytl="31.54" xbr="561.53" ybr="374.43" z_order="0">
+    </box>
+  </image>
+  <image id="11" name="banana_7.jpg" width="654" height="433">
+    <box label="banana" occluded="0" source="manual" xtl="173.29" ytl="61.58" xbr="494.94" ybr="353.01" z_order="0">
+    </box>
+  </image>
+  <image id="12" name="banana_8.jpg" width="600" height="600">
+    <box label="banana" occluded="0" source="manual" xtl="50.03" ytl="196.95" xbr="534.38" ybr="562.20" z_order="0">
+    </box>
+  </image>
+  <image id="13" name="banana_9.jpg" width="1010" height="670">
+    <box label="banana" occluded="0" source="manual" xtl="305.64" ytl="275.85" xbr="1006.80" ybr="577.40" z_order="0">
+    </box>
+  </image>
+</annotations>

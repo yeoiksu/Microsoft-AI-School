@@ -100,16 +100,16 @@ def reDefine():
 
         if '사과' in name:
             for index, item in enumerate(os.listdir(apple_path)):
-                shutil.copyfile(apple_path + item, folder_path + '/apple/사과_' + str(index) + '.jpg')
+                shutil.copyfile(apple_path + item, folder_path + '/apple/apple_' + str(index) + '.jpg')
         elif '바나나' in name:
             for index, item in enumerate(os.listdir(banana_path)):
-                shutil.copyfile(banana_path + item, folder_path + '/banana/바나나_' + str(index) + '.jpg') 
+                shutil.copyfile(banana_path + item, folder_path + '/banana/banana_' + str(index) + '.jpg') 
         elif '키위' in name:
             for index, item in enumerate(os.listdir(kiwi_path)):
-                shutil.copyfile(kiwi_path + item, folder_path + '/kiwi/키위_' + str(index) + '.jpg')             
+                shutil.copyfile(kiwi_path + item, folder_path + '/kiwi/kiwi_' + str(index) + '.jpg')             
 
 if __name__ == '__main__':
-    pool = Pool(processes=3)
-    pool.map(image_download, keyword)
-    # reDefine()
+    # pool = Pool(processes=3)
+    # pool.map(image_download, keyword)
+    reDefine()
     

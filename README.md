@@ -55,6 +55,8 @@ This space is to record what I've learned from MS AI School program
 - Day 46. &nbsp;&nbsp;[Image. OpenCV](https://github.com/yeoiksu/Microsoft-AI-School/tree/main/2022.12/12.07_d46_image)
 - Day 47. &nbsp;&nbsp;[Image. OpenCV](https://github.com/yeoiksu/Microsoft-AI-School/tree/main/2022.12/12.08_d47_image)
 - Day 48. &nbsp;&nbsp;[Image. OpenCV](https://github.com/yeoiksu/Microsoft-AI-School/tree/main/2022.12/12.09_d48_image)
+- Day 49. &nbsp;&nbsp;[Image. OpenCV](https://github.com/yeoiksu/Microsoft-AI-School/tree/main/2022.12/12.12_d48_image)
+- Day 50. &nbsp;&nbsp;[Image. OpenCV](https://github.com/yeoiksu/Microsoft-AI-School/tree/main/2022.12/12.13_d48_image)
 
 :link: More about [MS AI SCHOOL, South Korea](https://msaischool.kr/)
 
