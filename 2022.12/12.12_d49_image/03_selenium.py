@@ -5,7 +5,10 @@ import time
 import os
 import urllib.request
 import pandas as pd
+import shutil
 
+folder_path = './2022.12/12.12_d49_image/data'
+chromedriver_path = './2022.12/chromedriver.exe'
 
 def create_folder(directory):
     # 폴더 생성
@@ -17,19 +20,18 @@ def create_folder(directory):
 
 
 # 검색 키워드 호출
-key = pd.read_csv('./keyword.txt', encoding='utf-8', names=['keyword'])
+key = pd.read_csv(folder_path+'/keyword.txt', encoding= 'utf-8', names =['keyword'])
 keyword = []
 [keyword.append(key['keyword'][x]) for x in range(len(key))]
 
-
 def image_download(keywords):
-    create_folder("./" + keywords + "_high_resolution")
+    create_folder(folder_path + '/' + keywords + '_low_resolution' )
 
     # 크롬 드라이브 호출
     options = webdriver.ChromeOptions()
     options.add_experimental_option("detach", True)
-    chromedriver = "./chromedriver"
-    driver = webdriver.Chrome(chromedriver, options=options)
+    
+    driver = webdriver.Chrome(chromedriver_path, options= options)
     driver.implicitly_wait(3)
 
     # 검색
@@ -43,15 +45,14 @@ def image_download(keywords):
     # 스크롤 내리기 -> 결과 더보기 버튼 클릭
     print("스크롤 ..... ", keywords)
     elem = driver.find_element_by_tag_name('body')
-    for i in range(100):
+    N = 50
+    for i in range(N):
         elem.send_keys(Keys.PAGE_DOWN)
         time.sleep(0.4)
-
     try:
-        # //*[@id="islmp"]/div/div/div/div[2]/div[1]/div[2]/div[2]/input
         driver.find_element_by_xpath(
             '//*[@id="islmp"]/div/div/div/div[2]/div[1]/div[2]/div[2]/input').click()
-        for i in range(100):
+        for i in range(N):
             elem.send_keys(Keys.PAGE_DOWN)
             time.sleep(0.4)
     except:
@@ -75,20 +76,40 @@ def image_download(keywords):
             continue
 
     forbidden = 0
-    for k, i in enumerate(links):
+    for index, i in enumerate(links):
         try:
-            url = i
-            start = time.time()
-            urllib.request.urlretrieve(
-                url, "./"+keywords+"_high resolution/"+keywords+"_"+str(k-forbidden)+".jpg")
-            print(str(k+1)+'/'+str(len(links))+' '+keywords +
-                  ' 다운로드 중....... Download time : '+str(time.time() - start)[:5]+' 초')
+            url = i 
+            start = time.time()  
+            urllib.request.urlretrieve(url, folder_path + '/'+ keywords +'_high_resolution/' + keywords + "_" + str(index) +".jpg" )
+            print(str(index+1) + '/'+str(len(links)) + " " + keywords+ ' 다운로드 중...... Download time : ' + str(time.time() - start)[:5]+ ' 초' )
         except:
             forbidden += 1
             continue
-    print(keywords+' ---다운로드 완료---')
+    print(keywords + ' ---다운로드 완료---')
 
+def reDefine():
+    folder_path = './2022.12/12.12_d49_image/data'
+    apple_path  = './2022.12/12.12_d49_image/data/사과_high_resolution/'
+    banana_path = './2022.12/12.12_d49_image/data/바나나_high_resolution/'
+    kiwi_path   = './2022.12/12.12_d49_image/data/키위_high_resolution/'
+
+    for name in os.listdir(folder_path):
+        os.makedirs(os.path.join(folder_path, 'apple') , exist_ok=True)
+        os.makedirs(os.path.join(folder_path, 'banana'), exist_ok=True)  
+        os.makedirs(os.path.join(folder_path, 'kiwi')  , exist_ok=True) 
+
+        if '사과' in name:
+            for index, item in enumerate(os.listdir(apple_path)):
+                shutil.copyfile(apple_path + item, folder_path + '/apple/사과_' + str(index) + '.jpg')
+        elif '바나나' in name:
+            for index, item in enumerate(os.listdir(banana_path)):
+                shutil.copyfile(banana_path + item, folder_path + '/banana/바나나_' + str(index) + '.jpg') 
+        elif '키위' in name:
+            for index, item in enumerate(os.listdir(kiwi_path)):
+                shutil.copyfile(kiwi_path + item, folder_path + '/kiwi/키위_' + str(index) + '.jpg')             
 
 if __name__ == '__main__':
     pool = Pool(processes=3)
     pool.map(image_download, keyword)
+    # reDefine()
+    
