@@ -58,6 +58,7 @@ This space is to record what I've learned from MS AI School program
 - Day 49. &nbsp;&nbsp;[Image. Web Crawling using Selenium](https://github.com/yeoiksu/Microsoft-AI-School/tree/main/2022.12/12.12_d49_image)
 - Day 50. &nbsp;&nbsp;[Image. Bounding box, Polygon using CVAT & Resize](https://github.com/yeoiksu/Microsoft-AI-School/tree/main/2022.12/12.13_d50_image)
 - Day 51. &nbsp;&nbsp;[Image. Pytorch & Custom Dataset](https://github.com/yeoiksu/Microsoft-AI-School/tree/main/2022.12/12.14_d51_image)
+- Day 52. &nbsp;&nbsp;[Image. Augmentation(torchvision & albumentations)](https://github.com/yeoiksu/Microsoft-AI-School/tree/main/2022.12/12.15_d52_image)
 
 :link: More about [MS AI SCHOOL, South Korea](https://msaischool.kr/)
 
