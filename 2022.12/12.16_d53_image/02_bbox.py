@@ -10,7 +10,7 @@ def cvTest():
     x_ = image.shape[1]
 
     target_size = 256
-    x_scale = target_size / x_
+    x_scale = target_size / x_  
     y_scale = target_size / y_
     print("x_scale : ", x_scale, " ,y_sclae : ", y_scale)
 
