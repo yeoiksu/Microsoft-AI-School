@@ -109,7 +109,7 @@ def reDefine():
                 shutil.copyfile(kiwi_path + item, folder_path + '/kiwi/kiwi_' + str(index) + '.jpg')             
 
 if __name__ == '__main__':
-    # pool = Pool(processes=3)
-    # pool.map(image_download, keyword)
+    pool = Pool(processes=3)
+    pool.map(image_download, keyword)
     reDefine()
     
