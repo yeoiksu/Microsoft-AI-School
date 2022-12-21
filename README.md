@@ -59,8 +59,10 @@ This space is to record what I've learned from MS AI School program
 - Day 50. &nbsp;&nbsp;[Image. Bounding box, Polygon using CVAT & Resize](https://github.com/yeoiksu/Microsoft-AI-School/tree/main/2022.12/12.13_d50_image)
 - Day 51. &nbsp;&nbsp;[Image. Pytorch & Custom Dataset](https://github.com/yeoiksu/Microsoft-AI-School/tree/main/2022.12/12.14_d51_image)
 - Day 52. &nbsp;&nbsp;[Image. Augmentation(torchvision & albumentations)](https://github.com/yeoiksu/Microsoft-AI-School/tree/main/2022.12/12.15_d52_image)
-- Day 53. &nbsp;&nbsp;[Data. Custom dataset & Transform](https://github.com/yeoiksu/Microsoft-AI-School/tree/main/2022.12/12.16_d53_image)
-- Day 54. &nbsp;&nbsp;[Data. Web Crawling & Image Preprocessing & Data Split](https://github.com/yeoiksu/Microsoft-AI-School/tree/main/2022.12/12.19_d54_image)
+- Day 53. &nbsp;&nbsp;[Data. Custom dataset & Transform](https://github.com/yeoiksu/Microsoft-AI-School/tree/main/2022.12/12.16_d53_data)
+- Day 54. &nbsp;&nbsp;[Data. Web Crawling & Image Preprocessing & Data Split](https://github.com/yeoiksu/Microsoft-AI-School/tree/main/2022.12/12.19_d54_data)
+- Day 55. &nbsp;&nbsp;[Career Mentoring III](https://github.com/yeoiksu/Microsoft-AI-School/tree/main/2022.12/12.20_d55_career_mentoring_3)
+- Day 56. &nbsp;&nbsp;[Townhall Meeting III. Pyside6](https://github.com/yeoiksu/Microsoft-AI-School/tree/main/2022.12/12.21_d56_townhall_meeting_3)
 
 :link: More about [MS AI SCHOOL, South Korea](https://msaischool.kr/)
 

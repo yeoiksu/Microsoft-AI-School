@@ -24,5 +24,7 @@ def save_model(model, save_dir, file_name = "last.pt"):
     else:
         print("싱글 GPU 저장 !!")
         torch.save(model.state_dict(), output_path)
+
+
         
 
