@@ -207,7 +207,7 @@ def validate(val_loader, model, criterion, epoch, device):
             )
 
 
-save_dir = "./weights"
+save_dir = "./2022.12/12.16_d53_data/weights"
 
 for epoch in range(1, params["epoch"] + 1):
     train(train_loader, model, criterion, optimizer,

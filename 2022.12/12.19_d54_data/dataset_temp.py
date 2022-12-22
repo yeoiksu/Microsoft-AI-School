@@ -12,7 +12,7 @@ fruit_dict = {
     'watermelon': 4,
     }
 
-class custom_dataset(Dataset):
+class CustomDataset(Dataset):
     def __init__(self, image_file_path, transform=None):
         """
         data
@@ -31,7 +31,8 @@ class custom_dataset(Dataset):
         image = cv2.imread(image_path)
         
         # cv2 -> BGR -> RGB
-        image = cv2.cvtColor(image, cv2.COLOR_BGR2RGB)
+        image = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY).astype(np.float32)
+        # image = cv2.cvtColor(image, cv2.COLOR_BGR2RGB).astype(np.float32)
 
         # label
         labe_temp = image_path.split("\\")  # ['./2022.12/12.19_d54_data/data/train', 'banana', 'banana_0.png']
@@ -40,8 +41,7 @@ class custom_dataset(Dataset):
 
         if self.transform is not None:
             image = self.transform(image= image)["image"]
-        image = image.float()
-        
+
         return image, label
         
     def __len__(self):
@@ -49,6 +49,6 @@ class custom_dataset(Dataset):
 
 if __name__ == '__main__':
     file_path = "./2022.12/12.19_d54_data/data/train"
-    test = custom_dataset(file_path, transform= None)
+    test = CustomDataset(file_path, transform= None)
     for i in test:
         pass
