@@ -77,10 +77,10 @@ torchvision_transform = transforms.Compose([
     # transforms.Resize((256, 256)),          # 2. Resize (보통 정사각형 만들고 실행)
     # transforms.CenterCrop(size= (300)),     # 3. crop center (중앙 자르기, 거의 사용하지 않음)
     # transforms.Grayscale(),                 # 4. gray scale
-    # transforms.ColorJitter(                 # 5. 색상
-    #     brightness= 0.2, 
-    #     hue= 0.2,
-    #     contrast= 0.3),  
+    transforms.ColorJitter(                 # 5. 색상
+        brightness= 0.2, 
+        hue= 0.2,
+        contrast= 0.3),  
     # transforms.GaussianBlur(                # 6. 가우시안 블러
     #     kernel_size= 3,
     #     sigma= (0.1, 2)),    

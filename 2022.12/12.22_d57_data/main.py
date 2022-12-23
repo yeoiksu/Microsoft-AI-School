@@ -18,17 +18,33 @@ device = torch.device("cpu")
 # m1 m2 칩셋 사용하시는분
 # device = torch.device('mps:0' if torch.backends.mps.is_available() else 'cpu')
 
+# # train aug
+# train_transform = A.Compose([
+#     A.Resize(height=224, width=224),
+#     ToTensorV2()
+# ])
+# # val aug
+# val_transform = A.Compose([
+#     A.Resize(height=224, width=224),
+#     ToTensorV2()
+# ])
+
 # train aug
 train_transform = A.Compose([
     A.Resize(height=224, width=224),
+    A.HorizontalFlip(p= 0.5),              # 좌우
+    A.VerticalFlip(p= 0.5),                # 위아래
+    A.RandomBrightnessContrast(p= 0.2),    # 밝기대조
     ToTensorV2()
 ])
 # val aug
 val_transform = A.Compose([
     A.Resize(height=224, width=224),
+    A.HorizontalFlip(p= 0.5),
+    A.VerticalFlip(p= 0.5),
+    A.RandomBrightnessContrast(p= 0.2),
     ToTensorV2()
 ])
-
 
 # dataset
 train_dataset = CustomDataset("./2022.12/12.19_d54_data/data/train", transform= train_transform)
@@ -53,7 +69,7 @@ criterion = nn.CrossEntropyLoss()
 optim = torch.optim.Adam(net.parameters(), lr= hy_parameter.lr)
 
 # model save dir
-model_save_dir= "./2022.12/12.22_d54_data/model_save"
+model_save_dir= "./2022.12/12.22_d57_data/model_save"
 os.makedirs(model_save_dir, exist_ok=True)
 
 train(
