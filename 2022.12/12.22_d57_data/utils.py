@@ -18,7 +18,6 @@ def save_model(model, save_dir, file_name="last.pt"):
         print("싱글 GPU 저장 !! ")
         torch.save(model.state_dict(), output_path)
 
-
 # train loop
 def train(number_epoch, train_loader, val_loader, criterion, optimizer, model, save_dir, device):
     print("start training...")
@@ -58,11 +57,11 @@ def train(number_epoch, train_loader, val_loader, criterion, optimizer, model, s
         if epoch % 10 == 0:
             save_model(model, save_dir, file_name=f"{epoch}.pt")
 
-        # best save
-        if val_acc > best_loss:
-            print(f"best save >>> {epoch}")
-            best_loss = val_acc
-            save_model(model, save_dir, file_name="best.pt")
+        # # best save
+        # if val_acc > best_loss:
+        #     print(f"best save >>> {epoch}")
+        #     best_loss = val_acc
+        #     save_model(model, save_dir, file_name="best.pt")
 
     # last save
     save_model(model, save_dir, file_name="final.pt")
@@ -96,7 +95,7 @@ def validate(epoch, model, val_loader, criterion, device):
 
     print("val # {} acc {:.2f}$ avg loss {:.4f}".format(
         epoch + 1,
-        correct / total * 100,
+        val_acc,
         avg_loss,
     ))
 
