@@ -38,7 +38,7 @@ def main():
         # create train_transform directory
         folder_name_temp = transform_train.split("_")[0] + str(index)  # transform + str(index)
         model_save_dir= os.path.join("./2022.12/12.22_d57_data/model_save", folder_name_temp)
-        os.makedirs(model_save_dir, exist_ok=True)
+        os.makedirs(model_save_dir, exist_ok=True)  # ./2022.12/12.22_d57_data/model_save\transform 0~4 
 
         train_transform = A.Compose(transform_train) # train aug
         train_dataset = CustomDataset("./2022.12/12.19_d54_data/data/train", # train dataset

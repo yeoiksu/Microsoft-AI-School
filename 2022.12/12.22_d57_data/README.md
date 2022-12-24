@@ -19,6 +19,6 @@
 - 서로 다른 augmentation transform 모델을 불러오고 훈련이 진행
 - hy_parameter.py에서 parameter 값을 가져옴
 - transform_list.py 에서 image augmentation 리스트를 불러와 훈련 모두 실행
-- utils.py의 train() 함수를 사용하여 모델 훈련 시작
+- utils.py의 train() 함수를 사용하여 모델 훈련 후 model save 폴더에 pt 파일 저장
 
 

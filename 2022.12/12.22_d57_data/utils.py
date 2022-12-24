@@ -7,15 +7,15 @@ import os
 import torch.nn as nn
 from tqdm import tqdm
 
-def save_model(model, save_dir, file_name="last.pt"):
+def save_model(model, save_dir, file_name="best.pt"):
     # save model
     os.makedirs(save_dir, exist_ok=True)
     output_path = os.path.join(save_dir, file_name)
     if isinstance(model, nn.DataParallel):
-        print("멀티 GPU 저장 !! ")
+        # print("멀티 GPU 저장 !! ")
         torch.save(model.module.state_dict(), output_path)
     else:
-        print("싱글 GPU 저장 !! ")
+        # print("싱글 GPU 저장 !! ")
         torch.save(model.state_dict(), output_path)
 
 # train loop
@@ -31,7 +31,7 @@ def train(number_epoch, train_loader, val_loader, criterion, optimizer, model, s
             labels = labels.to(device)
 
             optimizer.zero_grad()
-            outputs = model(images)
+            outputs = model(images)  # model이 예측한 결과
             loss = criterion(outputs, labels)
             loss.backward()
             optimizer.step()
@@ -54,8 +54,8 @@ def train(number_epoch, train_loader, val_loader, criterion, optimizer, model, s
         avg_loss, val_acc = validate(epoch, model, val_loader, criterion, device)
 
         # 특정 에포크 마다 저장 하고 싶다 하는 경우
-        if epoch % 10 == 0:
-            save_model(model, save_dir, file_name=f"{epoch}.pt")
+        # if epoch % 10 == 0:
+        #     save_model(model, save_dir, file_name=f"{epoch}.pt")
 
         # # best save
         # if val_acc > best_loss:
