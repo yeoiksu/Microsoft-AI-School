@@ -65,6 +65,7 @@ This space is to record what I've learned from MS AI School program
 - Day 56. &nbsp;&nbsp;[Townhall Meeting III. Pyside6](https://github.com/yeoiksu/Microsoft-AI-School/tree/main/2022.12/12.21_d56_townhall_meeting_3)
 - Day 57. &nbsp;&nbsp;[Data. Custom Dataset & Image Augmentation & Train/Test](https://github.com/yeoiksu/Microsoft-AI-School/tree/main/2022.12/12.22_d57_data)
 - Day 58. &nbsp;&nbsp;[DL. Introduction of ML & DL](https://github.com/yeoiksu/Microsoft-AI-School/tree/main/2022.12/12.23.d58_deep_learning)
+- Day 59. &nbsp;&nbsp;[DL. Loss function & Optimizer & Multi Linear Regression](https://github.com/yeoiksu/Microsoft-AI-School/tree/main/2022.12/12.26.d59_deep_learning)
 
 :link: More about [MS AI SCHOOL, South Korea](https://msaischool.kr/)
 
