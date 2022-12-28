@@ -1,9 +1,9 @@
 from ex02_utilis import *
-from PIL import Image
+from PIL import Image,  ImageOps
 from ex02_utilis import expand2square
 
-train_path = "./2022.12/12.28.d61_cnn/data/dataset/train_image"
-test_path  = "./2022.12/12.28.d61_cnn/data/dataset/test_image"
+train_path = "C://Users//user//Documents//datasets//train_image"
+test_path  = "C://Users//user//Documents//datasets//test_image"
             
 train_data = image_file(train_path)
 test_data  = image_file(test_path)
@@ -15,7 +15,7 @@ train 길이      : 569
 test 길이       : 310
 """
 # resize flag
-train_image_resize = False
+train_image_resize = True
 if train_image_resize == True:
     for idx in range(10):
         os.makedirs(f"./2022.12/12.28.d61_cnn/data/dataset/train/{idx}/", exist_ok= True)
@@ -26,13 +26,14 @@ if train_image_resize == True:
         file_name = f_name_temp.split('.')[0]
 
         img = Image.open(i)
+        img = ImageOps.exif_transpose(img)
         img_new = expand2square(img, (0,0,0)).resize((400,400))
         for num in range(10):
             if f_name == str(num):
                 img_new.save(f"./2022.12/12.28.d61_cnn/data/dataset/train/{str(num)}/{file_name}.png")    
 
 # resize flag
-test_image_resize = False
+test_image_resize = True
 if test_image_resize == True:
     for idx in range(10):
         os.makedirs(f"./2022.12/12.28.d61_cnn/data/dataset/test/{idx}/", exist_ok= True)
@@ -43,6 +44,7 @@ if test_image_resize == True:
         file_name = f_name_temp.split('.')[0]
 
         img = Image.open(i)
+        img = ImageOps.exif_transpose(img)
         img_new = expand2square(img, (0,0,0)).resize((400,400))
         for num in range(10):
             if f_name == str(num):
