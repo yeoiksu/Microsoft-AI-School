@@ -1,1 +1,1 @@
-# Day60. DL. 
+# Day60. DL. Activate Function & Regression

@@ -1,1 +1,1 @@
-# Day61. CNN. 
+# Day61. CNN. Basic of CNN 
