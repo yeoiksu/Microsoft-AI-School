@@ -2,9 +2,9 @@
 dataset 
     - mnist.py
 """
-from dataset.mnist import load_mnist
 import matplotlib.pyplot as plt
-from optimizer import *  # 직접 제작한 optimizer 모듈 로드
+from ex01_optimizer import *  # 직접 제작한 optimizer 모듈 로드
+from ex07_mnist import load_mnist
 
 # 0 MNIST 데이터 읽기
 (x_train, t_train), (x_test, t_test) = load_mnist(normalize=True)
