@@ -13,7 +13,7 @@ from albumentations.pytorch import ToTensorV2
 from timm.loss import LabelSmoothingCrossEntropy
 from adamp import AdamP
 from ex01_custom_dataset import CustomDataset
-from ex03_utils import train
+from ex03_utils import train, test_species, test_show
 
 
 def main(opt):
@@ -39,17 +39,19 @@ def main(opt):
     # dataset
     train_dataset = CustomDataset(file_path= opt.train_path, transform= train_transform)
     valid_dataset = CustomDataset(file_path= opt.val_path  , transform= val_transform)
+    test_dataset  = CustomDataset(file_path= opt.test_path , transform= val_transform)
 
     # dataloader
     train_loader = DataLoader(train_dataset, batch_size= opt.batch_size, shuffle= True)
     valid_loader = DataLoader(valid_dataset, batch_size= opt.batch_size, shuffle= False)
+    test_loader  = DataLoader(test_dataset, batch_size= 1, shuffle= False)
 
     # model call
     # train -> label -> 53
     net = models.__dict__["resnet50"](pretrained= True)
-    net.fc = nn.Linear(512, 53)  # output 수정
+    num_ftrs = net.fc.in_features 
+    net.fc = nn.Linear(num_ftrs, 53)  # output 수정
     net.to(device)
-    print(net)
 
     # loss
     criterion= LabelSmoothingCrossEntropy().to(device)
@@ -67,7 +69,12 @@ def main(opt):
     os.makedirs(save_dir, exist_ok=True)
 
     # train
-    train(opt.epoch, net, train_loader, valid_loader, criterion, optimizer, scheduler, save_dir, device)
+    train_flg = opt.train_flag
+    if train_flg == True:
+        train(opt.epoch, net, train_loader, valid_loader, criterion, optimizer, scheduler, save_dir, device)
+    else:
+        # test_species(test_loader, device)
+        test_show(test_loader, device)
 
 def parse_opt() :
     parser = argparse.ArgumentParser()
@@ -75,10 +82,14 @@ def parse_opt() :
                         help="train data path")
     parser.add_argument("--val-path" ,type=str, default= "C:\\dataset\\valid", 
                         help="val data path")
+    parser.add_argument("--test-path" ,type=str, default= "C:\\dataset\\test", 
+                        help="test data path")
     parser.add_argument("--save-path", type=str, default="C:\\dataset\\weights",
                         help="save mode path")
     parser.add_argument("--batch-size", type=int, default=32,
-                        help="batch size")
+                        help="batch size")                    
+    parser.add_argument("--train-flag", type=bool, default=False,
+                        help="train or test mode flag")
     parser.add_argument("--epoch", type=int, default=100,
                         help="epoch number")
     parser.add_argument("--lr" , type=float, default=0.001,

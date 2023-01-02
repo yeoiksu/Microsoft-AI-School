@@ -71,13 +71,15 @@ This space is to record what I've learned from MS AI School program
 - Day 62. &nbsp;&nbsp;[CNN. Basic Concept of CNN](https://github.com/yeoiksu/Microsoft-AI-School/tree/main/2022.12/12.29.d62_cnn)
 - Day 63. &nbsp;&nbsp;[CNN. Basic Concept of CNN](https://github.com/yeoiksu/Microsoft-AI-School/tree/main/2022.12/12.30.d63_cnn)
 
-# Day61. 
+### :peach: January
+- Day 64. &nbsp;&nbsp;[CNN. Basic Concept of CNN](https://github.com/yeoiksu/Microsoft-AI-School/tree/main/2023.01/01.02.d64_cnn)
+
 :link: More about [MS AI SCHOOL, South Korea](https://msaischool.kr/)
 
 <!--
 - DAY 100. [Python. Pandas & Matplotlib Pyplot]()
 
-### :peach: January
+
 ### :grapes: February
 ### :watermelon: March
 --!>
