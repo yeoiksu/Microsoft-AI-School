@@ -68,11 +68,13 @@ This space is to record what I've learned from MS AI School program
 - Day 59. &nbsp;&nbsp;[DL. Loss function & Optimizer & Multi Linear Regression](https://github.com/yeoiksu/Microsoft-AI-School/tree/main/2022.12/12.26.d59_deep_learning)
 - Day 60. &nbsp;&nbsp;[DL. Activate Function & Regression](https://github.com/yeoiksu/Microsoft-AI-School/tree/main/2022.12/12.27.d60_deep_learning)
 - Day 61. &nbsp;&nbsp;[CNN. Basic Concept of CNN](https://github.com/yeoiksu/Microsoft-AI-School/tree/main/2022.12/12.28.d61_cnn)
-- Day 62. &nbsp;&nbsp;[CNN. Basic Concept of CNN](https://github.com/yeoiksu/Microsoft-AI-School/tree/main/2022.12/12.29.d62_cnn)
-- Day 63. &nbsp;&nbsp;[CNN. Basic Concept of CNN](https://github.com/yeoiksu/Microsoft-AI-School/tree/main/2022.12/12.30.d63_cnn)
+- Day 62. &nbsp;&nbsp;[CNN. Practice(1)](https://github.com/yeoiksu/Microsoft-AI-School/tree/main/2022.12/12.29.d62_cnn)
+- Day 63. &nbsp;&nbsp;[CNN. Practice(2)](https://github.com/yeoiksu/Microsoft-AI-School/tree/main/2022.12/12.30.d63_cnn)
 
 ### :peach: January
-- Day 64. &nbsp;&nbsp;[CNN. Basic Concept of CNN](https://github.com/yeoiksu/Microsoft-AI-School/tree/main/2023.01/01.02.d64_cnn)
+- Day 64. &nbsp;&nbsp;[CNN. Practice(3)](https://github.com/yeoiksu/Microsoft-AI-School/tree/main/2023.01/01.02.d64_cnn)
+- Day 65. &nbsp;&nbsp;[DL. Practice(1)](https://github.com/yeoiksu/Microsoft-AI-School/tree/main/2023.01/01.03.d65_dl)
+- Day 66. &nbsp;&nbsp;[DL. Practice(2)](https://github.com/yeoiksu/Microsoft-AI-School/tree/main/2023.01/01.04.d66_dl)
 
 :link: More about [MS AI SCHOOL, South Korea](https://msaischool.kr/)
 

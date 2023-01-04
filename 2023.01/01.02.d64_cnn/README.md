@@ -1,1 +1,1 @@
-# Day63. CNN. Basic of CNN 
+# Day64. CNN. Practice(3)
