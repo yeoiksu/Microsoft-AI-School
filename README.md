@@ -75,6 +75,7 @@ This space is to record what I've learned from MS AI School program
 - Day 64. &nbsp;&nbsp;[CNN. Practice(3)](https://github.com/yeoiksu/Microsoft-AI-School/tree/main/2023.01/01.02.d64_cnn)
 - Day 65. &nbsp;&nbsp;[DL. Practice(1)](https://github.com/yeoiksu/Microsoft-AI-School/tree/main/2023.01/01.03.d65_dl)
 - Day 66. &nbsp;&nbsp;[DL. Practice(2)](https://github.com/yeoiksu/Microsoft-AI-School/tree/main/2023.01/01.04.d66_dl)
+- Day 67. &nbsp;&nbsp;[DL. Practice(3)](https://github.com/yeoiksu/Microsoft-AI-School/tree/main/2023.01/01.05.d67_dl)
 
 :link: More about [MS AI SCHOOL, South Korea](https://msaischool.kr/)
 

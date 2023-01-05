@@ -1,11 +1,14 @@
 import os
 import torch
+import pandas as pd
 
 def train(num_epoch, model, train_loader, val_loader, 
         criterion, optimizer , save_dir, device):
     print("Start training ......")
     total = 0
     best_loss = 9999
+    dfForAccuracy = pd.DataFrame(index=list(range(num_epoch)),
+                             columns=['Epoch', 'Accuracy'])
 
     for epoch in range(num_epoch):
         for i , (imgs, labels) in enumerate(train_loader):
@@ -32,10 +35,15 @@ def train(num_epoch, model, train_loader, val_loader,
                     acc.item() * 100
                 ))
         avrg_loss, val_acc = validation(model, val_loader, criterion, device)
+        dfForAccuracy.loc[epoch, 'Epoch'] = epoch + 1
+        dfForAccuracy.loc[epoch, 'Accuracy'] = round(val_acc, 3)
+        
         if avrg_loss < best_loss:
             print("Best pt save")
             best_loss = avrg_loss
             save_model(model, save_dir)
+        if epoch == num_epoch - 1 :
+            dfForAccuracy.to_csv(os.path.join(save_dir, "modelAccuracy.csv"), index=False)
     save_model(model, save_dir, file_name = "last.pt")
 
 def save_model(model, save_dir, file_name = "best.pt"):
