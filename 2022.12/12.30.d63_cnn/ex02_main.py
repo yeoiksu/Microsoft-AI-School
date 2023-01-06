@@ -2,7 +2,7 @@ from ex01_custom_dataset import customDataset
 from torch.utils.data import DataLoader
 from torchvision import transforms
 from torchvision import models
-import torch.nn as nns
+import torch.nn as nn
 import torch
 import torch.optim as optim
 

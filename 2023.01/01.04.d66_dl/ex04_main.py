@@ -74,8 +74,8 @@ for epoch in range(epochs):
     val_accuracy = val_acc / len(valid_dataset)
     train_accuracy = train_acc / len(train_dataset)
 
-    dfForAccuracy.loc[epoch,' Epochs'] = epoch + 1
-    dfForAccuracy.loc[epoch,' Accuracy'] = round(val_accuracy, 3)
+    dfForAccuracy.loc[epoch,'Epochs'] = epoch + 1
+    dfForAccuracy.loc[epoch,'Accuracy'] = round(val_accuracy, 3)
     
     print(f"epoch [{epoch+1}/{epochs}]"
     f" train loss : {(running_loss/train_steps):.3f}"

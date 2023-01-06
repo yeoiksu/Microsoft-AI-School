@@ -21,7 +21,7 @@ class CustomDataset(Dataset):
         image = cv2.cvtColor(image, cv2.COLOR_BGR2RGB)
 
         # class label
-        label_name = image_path.split('\\')[1]   # ABBOTTS BABBLER ~ YELLOW HEADED BLACKBIRD
+        label_name = image_path.split('\\')[1] # ABBOTTS BABBLER ~ YELLOW HEADED BLACKBIRD
         label = self.label_dict[label_name] # 0 ~ 450
         
         # Applying transforms on image
