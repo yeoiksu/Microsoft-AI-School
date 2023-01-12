@@ -79,6 +79,8 @@ This space is to record what I've learned from MS AI School program
 - Day 68. &nbsp;&nbsp;[DL. Team Meeting](https://github.com/yeoiksu/Microsoft-AI-School/tree/main/2023.01/01.06.d68_dl)
 - Day 69. &nbsp;&nbsp;[DL. Practice(4)](https://github.com/yeoiksu/Microsoft-AI-School/tree/main/2023.01/01.09.d69_dl)
 - Day 70. &nbsp;&nbsp;[DL. Mini Team Project(1)](https://github.com/yeoiksu/Microsoft-AI-School/tree/main/2023.01/01.10.d70_dl)
+- Day 71. &nbsp;&nbsp;[DL. Mini Team Project(2)](https://github.com/yeoiksu/Microsoft-AI-School/tree/main/2023.01/01.11.d71_dl)
+- Day 72. &nbsp;&nbsp;[DL. Mini Team Project(3)](https://github.com/yeoiksu/Microsoft-AI-School/tree/main/2023.01/01.12.d72_dl)
 
 :link: More about [MS AI SCHOOL, South Korea](https://msaischool.kr/)
 
