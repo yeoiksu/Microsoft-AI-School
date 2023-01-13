@@ -63,18 +63,18 @@ def main():
     ])
 
     ### 1. Loading Classification Dataset
-    train_dataset = CustomDataset("./0111/dataset/train" , transform= train_aug)
-    valid_dataset = CustomDataset("./0111/dataset/val"   , transform= valid_aug)
+    train_dataset = CustomDataset("./2023.01/01.12.d72_dl/dataset/train" , transform= train_aug)
+    # valid_dataset = CustomDataset("./2023.01/01.12.d72_dl/dataset/val"   , transform= valid_aug)
     
     ### 2. Data Loader
     train_loader = DataLoader(train_dataset, batch_size= BATCH_SIZE, shuffle= True , num_workers= 2, pin_memory= True)
-    valid_loader = DataLoader(valid_dataset, batch_size= BATCH_SIZE, shuffle= False, num_workers= 2, pin_memory= True)
+    # valid_loader = DataLoader(valid_dataset, batch_size= BATCH_SIZE, shuffle= False, num_workers= 2, pin_memory= True)
 
     ### visual augmentation
     def visualize_augmentation(dataset, idx = 0, cols= 5):
         dataset = copy.deepcopy(dataset)
         samples = 5
-        
+
         dataset.transform = A.Compose([t for t in dataset.transform if not isinstance(
             t, (A.Normalize, ToTensorV2)
         )])
@@ -90,7 +90,12 @@ def main():
         plt.tight_layout()
         plt.show()
 
-    # visualize_augmentation(train_dataset)
+    visualize_augmentation(train_dataset)
+    visualize_augmentation(train_dataset)
+    visualize_augmentation(train_dataset)
+    visualize_augmentation(train_dataset)
+    visualize_augmentation(train_dataset)
+    exit()
     # visualize_augmentation(valid_dataset)
     # visualize_augmentation(test_dataset)
     

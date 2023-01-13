@@ -1,12 +1,15 @@
-# 파일을 읽기 위한 Library
+#### 파일을 읽기 위한 Library
 import csv # 파일 읽을때 사용
 import os # 파일 읽을때 사용
 # !pip install python_dotenv
 from dotenv import load_dotenv # .env(비밀번호나 API_KEY처럼 sensitive한 정보를 숨겨줄때 사용함) 파일을 읽어줌
 
-# 주소를 얻고 지도를 그리기 위한 Library
+#### 주소를 얻고 지도를 그리기 위한 Library
 # !pip install folium
 import folium # 지도를 그릴 때 사용
+# pip install pyppeteer  
+from folium import utilities
+from pyppeteer import launch # folium의 html을 png로 변환해줄 때 사용
 # !pip install asyncio
 import asyncio # CPU 작업과 I/O를 병렬로 처리하게 해줌 
 # !pip install winsdk
@@ -14,12 +17,11 @@ import winsdk.windows.devices.geolocation as wdg # 원래는 C#용 코드 winrt 
 # !pip install geopy
 from geopy.geocoders import Nominatim # 위도 적도값을 구해주고 그걸 한국 실제 주소로 바꿔줄때 사용
 
-# 이메일 사용을 위한 Library
+#### 이메일 사용을 위한 Library
 import smtplib # 이메일 로그인할때 씀!
 # !pip install email-to
 from email.mime.text import MIMEText # 이메일 내용 보낼때 사용함 (제목, 내용을 나눠줌)
 from email.mime.multipart import MIMEMultipart # 이메일에 문자열 외의 다양한 파일을 보낼 때 사용  
-
 
 #01. 현재 GPS 통해 좌표값(위도 적도)을 얻기 위한 함수
 async def getCoords():
@@ -27,14 +29,11 @@ async def getCoords():
     pos = await locator.get_geoposition_async()
     return [pos.coordinate.latitude, pos.coordinate.longitude]
 
-
 def getLoc():
     try:
         return asyncio.run(getCoords())
     except PermissionError:
         print("ERROR: You need to allow applications to access you location in Windows settings")
-
-
 
 #02. 얻은 좌표값을 실질적은 주소로 바꿔주는 함수
 def geocoding_reverse(lat_lng_str): # lat_lng_str 은 str을 인자로 받음 "abcdefg"
@@ -42,7 +41,6 @@ def geocoding_reverse(lat_lng_str): # lat_lng_str 은 str을 인자로 받음 "a
     address = geolocoder.reverse(lat_lng_str) # geolocoder.reverse('위도, 적도') => 실제 주소 
 
     return address
-
 
 #03. 위 두개의 함수를 실행시켜 실질적인 주소를 반환
 def get_location():
@@ -71,10 +69,9 @@ def get_customer():
     
     return data
 
-
-# *** 드론 관측 시 이 함수(send_alarm)만 가져와서(from func import send_alarm) 실행시켜 주시면 되요!!! *** 
 #05. 현재 좌표와 경고 문구를 이메일로 보내주는 함수    
 def send_alarm():
+    
     # G-MAIL 접속 
     s = smtplib.SMTP('smtp.gmail.com', 587)
     s.starttls()
@@ -93,7 +90,6 @@ def send_alarm():
     
     # 보낼 메시지 설정
     msg = MIMEText(f"*** 경고 ***\n\n현재 아래 좌표에서 드론이 관측되었습니다.\n\n {address}")
-    
     msg['Subject'] = '제목 : 드론 경고 알림입니다.'
 
     # 각각의 이용자에게 메일을 보냄
@@ -105,12 +101,25 @@ def send_alarm():
     s.quit()
     print("E-mail Sent to All Customer")
 
+#06. html 형식의 지도를 png로 변환
+async def map_to_png(target, m):
+    html = m.get_root().render()
+    browser = await launch(headless=True)
+
+    page = await browser.newPage()
+    with utilities.temp_html_filepath(html) as fname:
+        await page.goto('file://{path}'.format(path=fname))
+
+    img_data = await page.screenshot({'path': f'output/out_{target}.png', 'fullPage': 'true', })
+    await browser.close()
+
 # # Debugging Tool
-send_alarm()
+if __name__ == '__main__':
+    # send_alarm()
+    address = getLoc()
+    m = folium.Map(location=address, zoom_start=15, prefer_canvas=True, zoom_control=False,scrollWheelZoom=False, dragging=False)
+    marker = folium.CircleMarker(address, radius=100, color='red', fill_color='red')
+    marker.add_to(m)
+    m.save('./2023.01/01.12.d72_dl/mymap.html')
 
-# address = getLoc()
-
-# m = folium.Map(location=address, zoom_start=15, prefer_canvas=True, zoom_control=False,scrollWheelZoom=False, dragging=False)
-# marker = folium.CircleMarker(address, radius=100, color='red', fill_color='red')
-# marker.add_to(m)
-# m.save('mymap.html')
+    
