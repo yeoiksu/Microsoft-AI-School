@@ -83,6 +83,8 @@ This space is to record what I've learned from MS AI School program
 - Day 72. &nbsp;&nbsp;[DL. Mini Team Project(3)](https://github.com/yeoiksu/Microsoft-AI-School/tree/main/2023.01/01.12.d72_mini_project)
 - Day 73. &nbsp;&nbsp;[DL. Quiz(1)](https://github.com/yeoiksu/Microsoft-AI-School/tree/main/2023.01/01.13.d73_quiz)
 - Day 74. &nbsp;&nbsp;[DL. Quiz(2)](https://github.com/yeoiksu/Microsoft-AI-School/tree/main/2023.01/01.16.d74_quiz)
+- Day 75. &nbsp;&nbsp;[Career Mentoring IV](https://github.com/yeoiksu/Microsoft-AI-School/tree/main/2023.01/01.17.d75_career_mentoring_4)
+- Day 76. &nbsp;&nbsp;[Presentation. Drone Detection & AFAD](https://github.com/yeoiksu/Microsoft-AI-School/tree/main/2023.01/01.18.d76_presentation)
 
 :link: More about [MS AI SCHOOL, South Korea](https://msaischool.kr/)
 
