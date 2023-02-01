@@ -89,9 +89,12 @@ This space is to record what I've learned from MS AI School program
 - Day 78. &nbsp;&nbsp;[Object Detection. YoloV5](https://github.com/yeoiksu/Microsoft-AI-School/tree/main/2023.01/01.20.d78_object_detection)
 - Day 79. &nbsp;&nbsp;[Object Detection. YoloV5](https://github.com/yeoiksu/Microsoft-AI-School/tree/main/2023.01/01.25.d79_object_detection)
 - Day 80. &nbsp;&nbsp;[Object Detection. YoloV7](https://github.com/yeoiksu/Microsoft-AI-School/tree/main/2023.01/01.26.d80_object_detection)
-- Day 81. &nbsp;&nbsp;[Mini Project1. Yolo V5](https://github.com/yeoiksu/Microsoft-AI-School/tree/main/2023.01/01.27.d81_individual_quiz)
-- Day 82. &nbsp;&nbsp;[Mini Project2. MM Detection](https://github.com/yeoiksu/Microsoft-AI-School/tree/main/2023.01/01.30.d82_individual_quiz)
-- Day 83. &nbsp;&nbsp;[Mini Project3. MM Detection](https://github.com/yeoiksu/Microsoft-AI-School/tree/main/2023.01/01.31.d83_individual_quiz)
+- Day 81. &nbsp;&nbsp;[Mini Project1. Yolo V5](https://github.com/yeoiksu/Microsoft-AI-School/tree/main/2023.01/01.27.d81_individual_project_1)
+- Day 82. &nbsp;&nbsp;[Mini Project2. MM Detection](https://github.com/yeoiksu/Microsoft-AI-School/tree/main/2023.01/01.30.d82_individual__project_2)
+- Day 83. &nbsp;&nbsp;[Mini Project3. MM Detection](https://github.com/yeoiksu/Microsoft-AI-School/tree/main/2023.01/01.31.d83_individual__project_3)
+
+### :grapes: February
+- Day 84. &nbsp;&nbsp;[Team Project. Object Detection(yolov5)](https://github.com/yeoiksu/Microsoft-AI-School/tree/main/2023.02/02.01.d84_team_project)
 
 :link: More about [MS AI SCHOOL, South Korea](https://msaischool.kr/)
 
@@ -99,6 +102,6 @@ This space is to record what I've learned from MS AI School program
 - DAY 100. [Python. Pandas & Matplotlib Pyplot]()
 
 
-### :grapes: February
+
 ### :watermelon: March
 --!>
