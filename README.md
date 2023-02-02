@@ -94,7 +94,8 @@ This space is to record what I've learned from MS AI School program
 - Day 83. &nbsp;&nbsp;[Mini Project3. MM Detection](https://github.com/yeoiksu/Microsoft-AI-School/tree/main/2023.01/01.31.d83_individual__project_3)
 
 ### :grapes: February
-- Day 84. &nbsp;&nbsp;[Team Project. Object Detection(yolov5)](https://github.com/yeoiksu/Microsoft-AI-School/tree/main/2023.02/02.01.d84_team_project)
+- Day 84. &nbsp;&nbsp;[Team Project. Park Dataset Object Detection(yolov5)](https://github.com/yeoiksu/Microsoft-AI-School/tree/main/2023.02/02.01.d84_team_project)
+- Day 85. &nbsp;&nbsp;[Team Project. Park Dataset Object Detection(yolov5)](https://github.com/yeoiksu/Microsoft-AI-School/tree/main/2023.02/02.02.d85_team_project)
 
 :link: More about [MS AI SCHOOL, South Korea](https://msaischool.kr/)
 
