@@ -98,6 +98,7 @@ This space is to record what I've learned from MS AI School program
 - Day 85. &nbsp;&nbsp;[Team Project. Park Dataset Object Detection(yolov5)](https://github.com/yeoiksu/Microsoft-AI-School/tree/main/2023.02/02.02.d85_team_project)
 - Day 86. &nbsp;&nbsp;[Team Project. Park Dataset Object Detection(yolov5)](https://github.com/yeoiksu/Microsoft-AI-School/tree/main/2023.02/02.03.d86_team_project)
 
+
 :link: More about [MS AI SCHOOL, South Korea](https://msaischool.kr/)
 
 <!--
