@@ -8,12 +8,12 @@ import time
 import urllib.request
 
 # 키워드 가져오기
-keyss = pd.read_csv('./2023.02/02.04.d87_team_study/keyword.txt', encoding='utf-8', names=['keyword'])
+keyss = pd.read_csv('./2023.02/02.06.d87_team_study/keyword.txt', encoding='utf-8', names=['keyword'])
 keyword = []
 [keyword.append(keyss['keyword'][x]) for x in range(len(keyss))]
 
 print(keyword)
-RANGE = 200
+RANGE = 5
 # 이미지 저장할 폴더 구성
 def create_folder(dir):
     try:
@@ -24,7 +24,7 @@ def create_folder(dir):
 
 # image download 함수
 def image_download(keyword):
-    create_folder('./2023.02/02.04.d87_team_study/helicopter/' + keyword + '/')
+    create_folder('./2023.02/02.06.d87_team_study/helicopter/' + keyword + '/')
 
     # chromedriver 가져오기
     chromedriver = './chromedriver.exe'
@@ -41,14 +41,14 @@ def image_download(keyword):
     elem = driver.find_element_by_tag_name("body")
     for i in range(RANGE):
         elem.send_keys(Keys.PAGE_DOWN)
-        time.sleep(0.1)
+        time.sleep(0.5)
 
     try:
         driver.find_element_by_xpath(
             '//*[@id="islmp"]/div/div/div/div[2]/div[1]/div[2]/div[2]/input').click()
         for i in range(RANGE):
             elem.send_keys(Keys.PAGE_DOWN)
-            time.sleep(0.1)
+            time.sleep(0.5)
     except:
         pass
 
@@ -75,7 +75,7 @@ def image_download(keyword):
             url = i
             start = time.time()
             urllib.request.urlretrieve(
-                url, "./2023.02/02.04.d87_team_study/helicopter/"+keyword+"/"+str(k-forbidden)+".jpg")
+                url, "./2023.02/02.06.d87_team_study/helicopter/"+keyword+"/"+str(k-forbidden)+".jpg")
             print(str(k+1)+'/'+str(len(links))+' '+keyword +
                   ' 다운로드 중....... Download time : '+str(time.time() - start)[:5]+' 초')
         except:
