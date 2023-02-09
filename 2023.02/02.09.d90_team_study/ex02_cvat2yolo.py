@@ -3,14 +3,11 @@ import os
 import glob
 from xml.etree.ElementTree import parse
 
-PATH = "C:/Users/user/Documents/04.projects"
-BIRD_FLAG = False
-if BIRD_FLAG:
-    label_dict = {'drone': 0, 'bird': 1, 'birds' : 2, 'airplane': 3, 'helicopter': 4, 'balloon': 5}
-else:
-    label_dict = {'drone': 0, 'bird': 1, 'airplane': 2, 'helicopter': 3, 'balloon': 4}
-
-def ex02_main():    
+PATH = "C:/Users/user/Documents/04.project"
+label_dict = {'drone' : 0, 'bird' : 1 , 'birds' : 2, 'airplane': 3 , 'helicopter' : 4, 'balloon' : 5}
+def ex02_main():
+    """xml 1 ~ 5 같이 여러 개 생기면 찾는 함수"""
+    
     xml_paths = glob.glob(os.path.join(PATH, "*", "*.xml"))
     os.makedirs(f"{PATH}/data/labels", exist_ok=True)  
 
@@ -56,5 +53,5 @@ def ex02_main():
                 with open(f"{PATH}/data/labels/{image_name_temp}", 'a') as f :
                     f.write(f"{label} {yolo_x} {yolo_y} {yolo_w} {yolo_h} \n")
 
-if __name__ == '__main__':
-    ex02_main()
+# if __name__ == '__main__':
+#     ex02_main()

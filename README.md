@@ -100,6 +100,7 @@ This space is to record what I've learned from MS AI School program
 - Day 87. &nbsp;&nbsp;[Team Study. Data Collection](https://github.com/yeoiksu/Microsoft-AI-School/tree/main/2023.02/02.06.d87_team_study)
 - Day 88. &nbsp;&nbsp;[Team Study. Data Collection](https://github.com/yeoiksu/Microsoft-AI-School/tree/main/2023.02/02.07.d88_team_study)
 - Day 89. &nbsp;&nbsp;[Team Study. Data Labeling using CVAT](https://github.com/yeoiksu/Microsoft-AI-School/tree/main/2023.02/02.08.d89_team_study)
+- Day 90. &nbsp;&nbsp;[Team Study. Model Training using yolov5 model](https://github.com/yeoiksu/Microsoft-AI-School/tree/main/2023.02/02.09.d90_team_study)
 
 :link: More about [MS AI SCHOOL, South Korea](https://msaischool.kr/)
 
