@@ -11,12 +11,11 @@ RESIZE_LIMIT = 960
 small_img_list, small_size_paths = [], []
 
 # 경로 변경 필요
-root_path = f"C:/Users/user/Documents/03.dataset/230206_dataset/{LABEL_NAME}_preprocessed_total_1_2"
-new_root = f"C:/Users/user/Documents/03.dataset/230206_dataset/{LABEL_NAME}_total"
+root_path = f"C:/Users/user/Documents/03.dataset/230206_dataset/selected"
+new_root = f"C:/Users/user/Documents/03.dataset/230206_dataset/3_{LABEL_NAME}"
 
 # 폴더 생성
 os.makedirs(new_root, exist_ok= True)
-# os.makedirs(resize_img_root, exist_ok= True)
 
 # 모든 이미지 (경로 변경 필요)
 jpg_paths = glob.glob(os.path.join(root_path, "*", '*.jpg'))
@@ -25,7 +24,7 @@ jpeg_paths = glob.glob(os.path.join(root_path, "*", '*.jpeg'))
 image_paths = jpg_paths + png_paths + jpeg_paths
 
 # 마지막 작업 num (수정 필수 !!!!)
-NUM = 2801
+NUM = 2301
 
 # 모든 이미지 경로
 for index, image_path in enumerate(image_paths):
@@ -75,7 +74,7 @@ for index, image_path in enumerate(image_paths):
             else:
                 cv2.imwrite(os.path.join(new_root, f'{LABEL_NAME}_{index}.png'), img)
             
-        print(f'{index}/{len(image_paths)}\t' , f'{RESIZE_FLAG}\t', img_name)
+        print(f'{index}/{len(image_paths)+NUM}\t' , f'{RESIZE_FLAG}\t', img_name)
     except Exception as e:
         print(e, '\t', image_path)
 

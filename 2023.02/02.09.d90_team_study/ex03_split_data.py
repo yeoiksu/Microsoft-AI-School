@@ -5,10 +5,13 @@ import os
 import glob
 import shutil
 from sklearn.model_selection import train_test_split
-from ex02_cvat2yolo import PATH, ex02_main
+# from ex02_cvat2yolo import PATH, ex02_main
+from ex02_cvat2yolo import ex02_main
+
 RATE = 0.8
 RANDOM_SEED = 777
 BIRD_FLAG = False
+PATH = "C:/Users/user/Documents/04.projects"
 
 if BIRD_FLAG:
     label_dict = {'drone': 0, 'bird': 1, 'birds' : 2, 'airplane': 3, 'helicopter': 4, 'balloon': 5}
@@ -17,8 +20,6 @@ else:
 
 def ex03_main():
     new_label_path = f"{PATH}/data/labels"
-    # image_paths = glob.glob(os.path.join(PATH, ))
-    # os.makedirs(image_path, exist_ok= True)
 
     # 폴더 생성
     modes = ['train', 'valid']
@@ -59,7 +60,8 @@ def ex03_main():
                 new_train_path = train_path.replace(os.path.join('data/labels', item), 'dataset/train/labels')
                 
                 # label move
-                shutil.move(train_path, new_train_path)  
+                # shutil.move(train_path, new_train_path)  
+                shutil.copy(train_path, new_train_path)  
                 
                 # image path setting
                 image_name = os.path.basename(train_path).replace('.txt', '.png') # drone_2202.png
@@ -67,7 +69,8 @@ def ex03_main():
                 new_image_path = os.path.join(f"{PATH}/dataset/train/images", image_name) # C:/Users/user/Documents/04.project/dataset/train/images\drone_2204.png
                 
                 # image move
-                shutil.move(prev_image_path, new_image_path)  
+                # shutil.move(prev_image_path, new_image_path) 
+                shutil.copy(prev_image_path, new_image_path) 
 
             ### valid
             for valid_path in valid_data:
@@ -75,7 +78,8 @@ def ex03_main():
                 new_valid_path = valid_path.replace(os.path.join('data/labels', item), 'dataset/valid/labels')
 
                 # label move
-                shutil.move(valid_path, new_valid_path)
+                # shutil.move(valid_path, new_valid_path)
+                shutil.copy(valid_path, new_valid_path)
 
                 # image path setting
                 image_name = os.path.basename(valid_path).replace('.txt', '.png') 
@@ -83,7 +87,8 @@ def ex03_main():
                 new_image_path = os.path.join(f"{PATH}/dataset/valid/images", image_name) 
 
                 # image move
-                shutil.move(prev_image_path, new_image_path)  
+                # shutil.move(prev_image_path, new_image_path)  
+                shutil.copy(prev_image_path, new_image_path)  
 
         except Exception as e:
             print(e)
@@ -95,7 +100,7 @@ def ex03_main():
         print(f"{item} split finished...")
 
     # 폴더 삭제
-    # shutil.rmtree(f"{PATH}/data", ignore_errors=True)
+    shutil.rmtree(f"{PATH}/data", ignore_errors=True)
 
 if __name__ == '__main__':
     # ex02_main()

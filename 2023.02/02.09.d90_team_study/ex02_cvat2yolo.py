@@ -19,12 +19,21 @@ def ex02_main():
         for img_meta in img_metas :
             # xml에 기록된 image name 가져오기
             image_name = img_meta.attrib['name']        # bird/bird_0.png
+            print(image_name)       # balloun_0.png -> balloon_827.png
+
+            front_name = image_name.split('_')[0].replace("balloun", "balloon")  # balloun -> balloon
+            back_num = str( int(image_name.split('_')[-1].split(".")[0]) + 827)  # 0 -> 827
+            image_name = f'{front_name}_{back_num}.png' # balloun_0.png -> balloon_827.png
+            exit()
+
             # 경로에 '/' 가 있다면
             if '/' in image_name:
                 image_name = image_name.split('/')[-1]  # bird_0.png
             else: 
                 pass
             image_name_temp = image_name.replace(".png", ".txt")
+
+            
 
             # Box meta 정보 뽑아오기 | XML은 모든 값이 str이라서 뭐 계산할 거면 int, float으로 바꿔줘야 함
             box_metas = img_meta.findall("box")

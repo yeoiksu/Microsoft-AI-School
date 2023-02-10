@@ -25,8 +25,7 @@ jpeg_paths = glob.glob(os.path.join(root_path, "*", '*.jpeg'))
 image_paths = jpg_paths + png_paths + jpeg_paths
 
 # 모든 이미지 경로
-for index, image_path in enumerate(image_paths):
-    
+for index, image_path in enumerate(image_paths):   
     img = cv2.imread(image_path, cv2.IMREAD_COLOR)
     img_name = image_path.split('\\')[-1]
     RESIZE_FLAG = False
@@ -68,7 +67,7 @@ for index, image_path in enumerate(image_paths):
                 dsize = (int(img.shape[1] * aspect_ratio), RESIZE_LIMIT)
                 resized_img = cv2.resize(img, dsize, interpolation=cv2.INTER_AREA)
                 cv2.imwrite( os.path.join(new_root, f'{LABEL_NAME}_{index}.png'), resized_img)
-
+                
             else:
                 cv2.imwrite(os.path.join(new_root, f'{LABEL_NAME}_{index}.png'), img)
             
