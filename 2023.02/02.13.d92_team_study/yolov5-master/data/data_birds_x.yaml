@@ -1,0 +1,13 @@
+# path : ./dataset/
+train : ./dataset_birds_x/train/images
+val : ./dataset_birds_x/valid/images
+
+# {'drone': 0, 'bird': 1, 'airplane': 2, 'helicopter': 3, 'balloon': 4}
+
+# Classes
+names:
+  0: drone
+  1: bird
+  2: airplane
+  3: helicopter
+  4: balloon
