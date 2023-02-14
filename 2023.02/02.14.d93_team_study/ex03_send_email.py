@@ -42,7 +42,6 @@ def send_alarm():
     
     # 보낼 메시지 설정
     msg = MIMEText(f"*** 경고 ***\n\n현재 아래 좌표에서 드론이 관측되었습니다.\n\n {address}")
-    
     msg['Subject'] = '제목 : 드론 경고 알림입니다.'
 
     # 각각의 이용자에게 메일을 보냄
@@ -68,8 +67,6 @@ def getLoc():
     except PermissionError:
         print("ERROR: You need to allow applications to access you location in Windows settings")
 
-
-
 #02. 얻은 좌표값을 실질적은 주소로 바꿔주는 함수
 def geocoding_reverse(lat_lng_str): 
     geolocoder = Nominatim(user_agent = 'South Korea', timeout=None)
@@ -89,34 +86,26 @@ def get_location():
     address = geocoding_reverse(location)
     return address
     
-    
-#04. csv파일을 읽어서 이용자의 이메일을 return하는 함수
+from important_data import *    
+#04. DB접속해서 customer 데이터를 읽어와 이메일을 return하는 함수
 def get_customer():
-    data = []
-    customer_data = './customer_email.csv' # *** 파일 주소는 필요시 변경해주세요!! ***
-    f = open(customer_data,'r',encoding='utf-8')
-    rdr = csv.reader(f)
+    import pandas as pd
+    from mysql.connector import (connection)
     
-    for line in rdr:
-        tmpstring = ''
-        tmpstring = line[0]
-        data.append(tmpstring)
+    # DB 연결
+    conn = connection.MySQLConnection(
+    user     = USER,
+    password = PASSWORD,
+    host     = HOST,
+    database = DATABASE
+    )
+    select_query = f"SELECT * FROM {TABLE_CUSTOMER}"
     
-    f.close()
-    
-    return data
+    # SQL문으로 TABLE에서 DATA 읽어오기
+    df_email = pd.read_sql(select_query, conn)
+    data = df_email['email'].values.tolist()
 
+    return data
 
 # # Debugging Tool
 send_alarm()
-
-# import io 
-# from PIL import Image
-
-# address = getLoc()
-# print(address)
-
-# map_ = folium.Map(location=address, zoom_start=13, prefer_canvas=True, zoom_control=False,scrollWheelZoom=False, dragging=False)
-# marker = folium.CircleMarker(address, radius=50, color='red', fill_color='red')
-# marker.add_to(map_)
-# map_.save('mymap.html')

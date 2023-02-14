@@ -33,7 +33,8 @@ import os
 import platform
 import sys
 from pathlib import Path
-
+import concurrent.futures
+from utils.ex01_func import *
 import torch
 
 FILE = Path(__file__).resolve()
@@ -178,8 +179,11 @@ def run(
                         # !!!!!!!!!!! 라벨 출력 (drone 0.92) !!!!!!!!!!!
                         label = None if hide_labels else (names[c] if hide_conf else f'{names[c]} {conf:.2f}')
                         label_name, label_threshold = annotator.box_label(xyxy, label, color=colors(c, True))
-                        # print(label)
-                        print(label_name, '|', label_threshold)
+                        # DB 데이터 INSERT // PROCESSING 한 개
+                        
+                        # EMAIL 보낼지 말지 알고리즘 작성 (미래)
+                        # drone 탐지가 된다면 db에서 customer data 읽고 email 보내주는 PROCESSING 한 개
+
 
                     if save_crop:
                         save_one_box(xyxy, imc, file=save_dir / 'crops' / names[c] / f'{p.stem}.jpg', BGR=True)
@@ -267,7 +271,12 @@ def main(opt):
     check_requirements(exclude=('tensorboard', 'thop'))
     run(**vars(opt))
 
+def send_email(msg):
+    print(msg)
 
 if __name__ == "__main__":
     opt = parse_opt()
     main(opt)
+    
+    
+

@@ -123,7 +123,7 @@ class Annotator:
                 label_threshold = label.split(" ")[1]   # 0.92
 
                 return label_name, label_threshold
-        return 0
+        return 0, 0
 
     def masks(self, masks, colors, im_gpu, alpha=0.5, retina_masks=False):
         """Plot masks at once.
