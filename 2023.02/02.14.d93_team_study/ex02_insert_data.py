@@ -27,6 +27,7 @@ for (id, name, email) in df_customer.values:
 
 print(sql_insert)
 cur.execute(sql_insert)
+conn.commit()
 conn.close()
 
 
