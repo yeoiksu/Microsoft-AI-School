@@ -34,8 +34,9 @@ import platform
 import sys
 from pathlib import Path
 import concurrent.futures
-from utils.ex01_func import *
 import torch
+from multiprocessing import Process, Queue
+from ex05_send_email import send_alarm
 
 FILE = Path(__file__).resolve()
 ROOT = FILE.parents[0]  # YOLOv5 root directory
@@ -180,7 +181,7 @@ def run(
                         label = None if hide_labels else (names[c] if hide_conf else f'{names[c]} {conf:.2f}')
                         label_name, label_threshold = annotator.box_label(xyxy, label, color=colors(c, True))
                         # DB 데이터 INSERT // PROCESSING 한 개
-                        
+
                         # EMAIL 보낼지 말지 알고리즘 작성 (미래)
                         # drone 탐지가 된다면 db에서 customer data 읽고 email 보내주는 PROCESSING 한 개
 
@@ -271,12 +272,15 @@ def main(opt):
     check_requirements(exclude=('tensorboard', 'thop'))
     run(**vars(opt))
 
-def send_email(msg):
-    print(msg)
-
 if __name__ == "__main__":
     opt = parse_opt()
     main(opt)
+
+    result = Queue()
+    pro_1 = Process(target=main, args=(opt))
+    pro_1.start()
+    pro_1.join()
+    result.put('STOP')
     
     
 

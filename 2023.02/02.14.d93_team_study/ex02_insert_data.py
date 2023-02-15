@@ -25,7 +25,6 @@ for (id, name, email) in df_customer.values:
     else:
         sql_insert += f'''({int(id)}, '{str(name)}', '{str(email)}'), '''
 
-print(sql_insert)
 cur.execute(sql_insert)
 conn.commit()
 conn.close()

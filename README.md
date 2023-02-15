@@ -103,6 +103,7 @@ This space is to record what I've learned from MS AI School program
 - Day 90. &nbsp;&nbsp;[Team Study. Model Training using yolov5 model](https://github.com/yeoiksu/Microsoft-AI-School/tree/main/2023.02/02.09.d90_team_study)
 - Day 91. &nbsp;&nbsp;[Team Study. Model Testing using Auto Labeling on CVAT AI](https://github.com/yeoiksu/Microsoft-AI-School/tree/main/2023.02/02.10.d91_team_study)
 - Day 92. &nbsp;&nbsp;[Team Study. Webcam Testing & Multi-Thread Studyp](https://github.com/yeoiksu/Microsoft-AI-School/tree/main/2023.02/02.13.d92_team_study)
+- Day 93. &nbsp;&nbsp;[Team Study. MariaDB(CRUD) & RabbitMQ](https://github.com/yeoiksu/Microsoft-AI-School/tree/main/2023.02/02.14.d93_team_study)
 
 
 :link: More about [MS AI SCHOOL, South Korea](https://msaischool.kr/)
