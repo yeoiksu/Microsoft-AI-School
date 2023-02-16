@@ -13,7 +13,7 @@ keyword = []
 [keyword.append(keyss['keyword'][x]) for x in range(len(keyss))]
 
 print(keyword)
-RANGE = 5
+RANGE = 200
 # 이미지 저장할 폴더 구성
 def create_folder(dir):
     try:
@@ -41,14 +41,14 @@ def image_download(keyword):
     elem = driver.find_element_by_tag_name("body")
     for i in range(RANGE):
         elem.send_keys(Keys.PAGE_DOWN)
-        time.sleep(0.5)
+        time.sleep(2)
 
     try:
         driver.find_element_by_xpath(
             '//*[@id="islmp"]/div/div/div/div[2]/div[1]/div[2]/div[2]/input').click()
         for i in range(RANGE):
             elem.send_keys(Keys.PAGE_DOWN)
-            time.sleep(0.5)
+            time.sleep(2)
     except:
         pass
 
@@ -84,8 +84,6 @@ def image_download(keyword):
     print(keyword+' ---다운로드 완료---')
 
     driver.close()
-
-
 
 # =====================================================================
 # 실행
