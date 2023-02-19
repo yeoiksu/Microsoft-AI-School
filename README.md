@@ -105,6 +105,8 @@ This space is to record what I've learned from MS AI School program
 - Day 92. &nbsp;&nbsp;[Team Study. Webcam Testing & Multi-Thread Study](https://github.com/yeoiksu/Microsoft-AI-School/tree/main/2023.02/02.13.d92_team_study)
 - Day 93. &nbsp;&nbsp;[Team Study. MariaDB(CRUD) & RabbitMQ](https://github.com/yeoiksu/Microsoft-AI-School/tree/main/2023.02/02.14.d93_team_study)
 - Day 94. &nbsp;&nbsp;[Team Study. PyQt5 and GUI Study](https://github.com/yeoiksu/Microsoft-AI-School/tree/main/2023.02/02.15.d94_team_study)
+- Day 95. &nbsp;&nbsp;[Team Study. Powerpoint & Presentation](https://github.com/yeoiksu/Microsoft-AI-School/tree/main/2023.02/02.16.d95_team_study)
+- Day 96. &nbsp;&nbsp;[Career Mentoring V](https://github.com/yeoiksu/Microsoft-AI-School/tree/main/2023.02/02.17.d96_career_mentoring_5)
 
 
 :link: More about [MS AI SCHOOL, South Korea](https://msaischool.kr/)
