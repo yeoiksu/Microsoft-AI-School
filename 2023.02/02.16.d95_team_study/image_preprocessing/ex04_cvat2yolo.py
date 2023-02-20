@@ -3,11 +3,10 @@ import os
 import glob
 from xml.etree.ElementTree import parse
 
-PATH = "C:/Users/user/Documents/04.project"
-label_dict = {'drone' : 0, 'bird' : 1 , 'birds' : 2, 'airplane': 3 , 'helicopter' : 4, 'balloon' : 5}
-def ex02_main():
+PATH = "C:/Users/user/Documents/04.projects"
+label_dict = {'drone' : 0, 'bird' : 1 , 'airplane': 2 , 'helicopter' : 3, 'balloon' : 4}
+def ex04_main():
     """xml 1 ~ 5 같이 여러 개 생기면 찾는 함수"""
-    
     xml_paths = glob.glob(os.path.join(PATH, "*", "*.xml"))
     os.makedirs(f"{PATH}/data/labels", exist_ok=True)  
 
@@ -19,12 +18,9 @@ def ex02_main():
         for img_meta in img_metas :
             # xml에 기록된 image name 가져오기
             image_name = img_meta.attrib['name']        # bird/bird_0.png
-            print(image_name)       # balloun_0.png -> balloon_827.png
-
-            front_name = image_name.split('_')[0].replace("balloun", "balloon")  # balloun -> balloon
-            back_num = str( int(image_name.split('_')[-1].split(".")[0]) + 827)  # 0 -> 827
-            image_name = f'{front_name}_{back_num}.png' # balloun_0.png -> balloon_827.png
-            exit()
+            # front_name = image_name.split('_')[0].replace("balloun", "balloon")  # balloun -> balloon
+            # back_num = str( int(image_name.split('_')[-1].split(".")[0]) + 827)  # 0 -> 827
+            # image_name = f'{front_name}_{back_num}.png' # balloun_0.png -> balloon_827.png
 
             # 경로에 '/' 가 있다면
             if '/' in image_name:
@@ -32,8 +28,6 @@ def ex02_main():
             else: 
                 pass
             image_name_temp = image_name.replace(".png", ".txt")
-
-            
 
             # Box meta 정보 뽑아오기 | XML은 모든 값이 str이라서 뭐 계산할 거면 int, float으로 바꿔줘야 함
             box_metas = img_meta.findall("box")
@@ -60,7 +54,7 @@ def ex02_main():
 
                 # 앞서 모은 정보들로 txt파일로 저장해보자
                 with open(f"{PATH}/data/labels/{image_name_temp}", 'a') as f :
-                    f.write(f"{label} {yolo_x} {yolo_y} {yolo_w} {yolo_h} \n")
+                    f.write(f"{label} {yolo_x} {yolo_y} {yolo_w} {yolo_h} /n")
 
 # if __name__ == '__main__':
-#     ex02_main()
+    # ex04_main()

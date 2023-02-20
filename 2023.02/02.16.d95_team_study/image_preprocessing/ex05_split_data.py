@@ -5,20 +5,15 @@ import os
 import glob
 import shutil
 from sklearn.model_selection import train_test_split
-# from ex02_cvat2yolo import PATH, ex02_main
-from ex02_cvat2yolo import ex02_main
+from ex04_cvat2yolo import ex04_main
 
 RATE = 0.8
 RANDOM_SEED = 777
 BIRD_FLAG = False
 PATH = "C:/Users/user/Documents/04.projects"
+label_dict = {'drone': 0, 'bird': 1, 'airplane': 2, 'helicopter': 3, 'balloon': 4}
 
-if BIRD_FLAG:
-    label_dict = {'drone': 0, 'bird': 1, 'birds' : 2, 'airplane': 3, 'helicopter': 4, 'balloon': 5}
-else:
-    label_dict = {'drone': 0, 'bird': 1, 'airplane': 2, 'helicopter': 3, 'balloon': 4}
-
-def ex03_main():
+def ex05_main():
     new_label_path = f"{PATH}/data/labels"
 
     # 폴더 생성
@@ -88,20 +83,23 @@ def ex03_main():
 
                 # image move
                 # shutil.move(prev_image_path, new_image_path)  
-                shutil.copy(prev_image_path, new_image_path)  
+                shutil.copy(prev_image_path, new_image_path)
+                print_flag = True
 
         except Exception as e:
             print(e)
+            print_flag = False
 
-        # info print
-        print("Total No. of Labels: ", len(txt_paths))
-        print("Total No. of Train : ", len(train_data))
-        print("Total No. of Valid : ", len(valid_data))
-        print(f"{item} split finished...")
+        if print_flag:
+            # info print
+            print("Total No. of Labels: ", len(txt_paths))
+            print("Total No. of Train : ", len(train_data))
+            print("Total No. of Valid : ", len(valid_data))
+            print(f"{item} split finished...")
 
     # 폴더 삭제
     shutil.rmtree(f"{PATH}/data", ignore_errors=True)
 
 if __name__ == '__main__':
-    # ex02_main()
-    ex03_main()
+    ex04_main()
+    ex05_main()

@@ -78,9 +78,9 @@ This space is to record what I've learned from MS AI School program
 - Day 67. &nbsp;&nbsp;[DL. Practice(3)](https://github.com/yeoiksu/Microsoft-AI-School/tree/main/2023.01/01.05.d67_dl)
 - Day 68. &nbsp;&nbsp;[DL. Team Meeting](https://github.com/yeoiksu/Microsoft-AI-School/tree/main/2023.01/01.06.d68_dl)
 - Day 69. &nbsp;&nbsp;[DL. Practice(4)](https://github.com/yeoiksu/Microsoft-AI-School/tree/main/2023.01/01.09.d69_dl)
-- Day 70. &nbsp;&nbsp;[DL. Mini Team Project(1)](https://github.com/yeoiksu/Microsoft-AI-School/tree/main/2023.01/01.10.d70_mini_project)
-- Day 71. &nbsp;&nbsp;[DL. Mini Team Project(2)](https://github.com/yeoiksu/Microsoft-AI-School/tree/main/2023.01/01.11.d71_mini_project)
-- Day 72. &nbsp;&nbsp;[DL. Mini Team Project(3)](https://github.com/yeoiksu/Microsoft-AI-School/tree/main/2023.01/01.12.d72_mini_project)
+- Day 70. &nbsp;&nbsp;[DL. Mini Team Project(1)](https://github.com/yeoiksu/Microsoft-AI-School/tree/main/2023.01/01.10.d70_team_project)
+- Day 71. &nbsp;&nbsp;[DL. Mini Team Project(2)](https://github.com/yeoiksu/Microsoft-AI-School/tree/main/2023.01/01.11.d71_team_project)
+- Day 72. &nbsp;&nbsp;[DL. Mini Team Project(3)](https://github.com/yeoiksu/Microsoft-AI-School/tree/main/2023.01/01.12.d72_team_project)
 - Day 73. &nbsp;&nbsp;[DL. Quiz(1)](https://github.com/yeoiksu/Microsoft-AI-School/tree/main/2023.01/01.13.d73_quiz)
 - Day 74. &nbsp;&nbsp;[DL. Quiz(2)](https://github.com/yeoiksu/Microsoft-AI-School/tree/main/2023.01/01.16.d74_quiz)
 - Day 75. &nbsp;&nbsp;[Career Mentoring IV](https://github.com/yeoiksu/Microsoft-AI-School/tree/main/2023.01/01.17.d75_career_mentoring_4)
@@ -107,7 +107,7 @@ This space is to record what I've learned from MS AI School program
 - Day 94. &nbsp;&nbsp;[Team Study. PyQt5 and GUI Study](https://github.com/yeoiksu/Microsoft-AI-School/tree/main/2023.02/02.15.d94_team_study)
 - Day 95. &nbsp;&nbsp;[Team Study. Powerpoint & Presentation](https://github.com/yeoiksu/Microsoft-AI-School/tree/main/2023.02/02.16.d95_team_study)
 - Day 96. &nbsp;&nbsp;[Career Mentoring V](https://github.com/yeoiksu/Microsoft-AI-School/tree/main/2023.02/02.17.d96_career_mentoring_5)
-
+- Day 97. &nbsp;&nbsp;[Townhall Meeting V](https://github.com/yeoiksu/Microsoft-AI-School/tree/main/2023.02/02.20.d97_townhall_meeting_5)
 
 :link: More about [MS AI SCHOOL, South Korea](https://msaischool.kr/)
 
