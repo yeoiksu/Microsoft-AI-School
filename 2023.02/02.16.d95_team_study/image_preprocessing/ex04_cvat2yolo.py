@@ -54,7 +54,7 @@ def ex04_main():
 
                 # 앞서 모은 정보들로 txt파일로 저장해보자
                 with open(f"{PATH}/data/labels/{image_name_temp}", 'a') as f :
-                    f.write(f"{label} {yolo_x} {yolo_y} {yolo_w} {yolo_h} /n")
+                    f.write(f"{label} {yolo_x} {yolo_y} {yolo_w} {yolo_h}\n")
 
 # if __name__ == '__main__':
     # ex04_main()

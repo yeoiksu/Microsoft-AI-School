@@ -11,8 +11,8 @@ RESIZE_LIMIT = 1280
 small_img_list, small_size_paths = [], []
 
 # 경로 변경 필요
-root_path = f"C:/Users/user/Documents/03.dataset/230206_dataset/5_{LABEL_NAME}_old"
-new_root = f"C:/Users/user/Documents/03.dataset/230206_dataset/5_{LABEL_NAME}"
+root_path = f"C:/Users/user/Documents/03.dataset/230206_dataset/7_{LABEL_NAME}_old"
+new_root = f"C:/Users/user/Documents/03.dataset/230206_dataset/7_{LABEL_NAME}"
 
 # 폴더 생성
 os.makedirs(new_root, exist_ok= True)
@@ -25,7 +25,7 @@ jpeg_paths = glob.glob(os.path.join(root_path, '*.jpeg'))
 image_paths = jpg_paths + png_paths + jpeg_paths
 
 # 마지막 작업 num (수정 필수 !!!!)
-NUM = 7281
+NUM = 13257
 
 # 모든 이미지 경로
 for index, image_path in enumerate(image_paths):
