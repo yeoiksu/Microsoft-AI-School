@@ -11,7 +11,7 @@ RATE = 0.8
 RANDOM_SEED = 777
 BIRD_FLAG = False
 PATH = "C:/Users/user/Documents/04.projects"
-label_dict = {'drone': 0, 'bird': 1, 'airplane': 2, 'helicopter': 3, 'balloon': 4}
+label_dict = {'drone': 0, 'bird': 1, 'airplane': 2, 'helicopter': 3, 'balloon': 4, 'military drone': 5}
 
 def ex05_main():
     new_label_path = f"{PATH}/data/labels"
@@ -27,7 +27,7 @@ def ex05_main():
     key_lists = []
     for key, value in label_dict.items():
         os.makedirs(f"{PATH}/data/labels/{key}", exist_ok=True)
-        key_lists.append(key)
+        key_lists.append(key)   # ['drone', 'bird', 'airplane', 'helicopter', 'balloon', 'military drone']
 
     label_paths = glob.glob(os.path.join(new_label_path, "*.txt"))
 
@@ -95,11 +95,12 @@ def ex05_main():
             print("Total No. of Labels: ", len(txt_paths))
             print("Total No. of Train : ", len(train_data))
             print("Total No. of Valid : ", len(valid_data))
-            print(f"{item} split finished...")
+            
+        print(f"{item} split finished...")
 
     # 폴더 삭제
-    shutil.rmtree(f"{PATH}/data", ignore_errors=True)
+    # shutil.rmtree(f"{PATH}/data", ignore_errors=True)
 
 if __name__ == '__main__':
-    ex04_main()
+    # ex04_main()
     ex05_main()

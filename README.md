@@ -108,6 +108,8 @@ This space is to record what I've learned from MS AI School program
 - Day 95. &nbsp;&nbsp;[Team Study. Powerpoint & Presentation](https://github.com/yeoiksu/Microsoft-AI-School/tree/main/2023.02/02.16.d95_team_study)
 - Day 96. &nbsp;&nbsp;[Career Mentoring V](https://github.com/yeoiksu/Microsoft-AI-School/tree/main/2023.02/02.17.d96_career_mentoring_5)
 - Day 97. &nbsp;&nbsp;[Townhall Meeting V](https://github.com/yeoiksu/Microsoft-AI-School/tree/main/2023.02/02.20.d97_townhall_meeting_5)
+- Day 98. &nbsp;&nbsp;[AI Project. Data Colleciting, Bounding Box](https://github.com/yeoiksu/Microsoft-AI-School/tree/main/2023.02/02.21.d98_AI_project)
+- Day 99. &nbsp;&nbsp;[AI Project. Data Colleciting, Bounding Box](https://github.com/yeoiksu/Microsoft-AI-School/tree/main/2023.02/02.22.d99_AI_project)
 
 :link: More about [MS AI SCHOOL, South Korea](https://msaischool.kr/)
 
