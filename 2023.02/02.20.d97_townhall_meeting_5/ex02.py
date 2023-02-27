@@ -73,9 +73,9 @@ for index, img_path in enumerate(img_paths):
             xbr = str(round(x2,3))
             ybr = str(round(y2,3))
 
-        #     image = cv2.putText(image, 'helicopter', (int(x1), int(y1-10)),
-        #                     cv2.FONT_HERSHEY_PLAIN,1.5,(0,0,255))
-        #     ret = cv2.rectangle(image,(int(x1),int(y1)),(int(x2),int(y2)), (0,255,0), 2)
+            image = cv2.putText(image, 'helicopter', (int(x1), int(y1-10)),
+                            cv2.FONT_HERSHEY_PLAIN,1.5,(0,0,255))
+            ret = cv2.rectangle(image,(int(x1),int(y1)),(int(x2),int(y2)), (0,255,0), 2)
 
             # bbox xml
             ET.SubElement(xml_frame, "box", label='helicopter', occluded="0", source="manual",
@@ -83,8 +83,8 @@ for index, img_path in enumerate(img_paths):
 
         seen_count +=1
 
-        # cv2.imshow(new_image_name, image)
-        # cv2.waitKey(0)
+        cv2.imshow(new_image_name, image)
+        cv2.waitKey(0)
 
     except Exception as e:
         print(e)

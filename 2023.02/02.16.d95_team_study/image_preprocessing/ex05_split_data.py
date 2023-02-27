@@ -102,5 +102,5 @@ def ex05_main():
     # shutil.rmtree(f"{PATH}/data", ignore_errors=True)
 
 if __name__ == '__main__':
-    # ex04_main()
+    ex04_main()
     ex05_main()

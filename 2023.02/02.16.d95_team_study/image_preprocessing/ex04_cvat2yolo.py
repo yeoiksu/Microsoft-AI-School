@@ -59,5 +59,5 @@ def ex04_main():
                 with open(f"{PATH}/data/labels/{image_name_temp}", 'a') as f :
                     f.write(f"{label} {yolo_x} {yolo_y} {yolo_w} {yolo_h}\n")
 
-if __name__ == '__main__':
-    ex04_main()
+# if __name__ == '__main__':
+#     ex04_main()

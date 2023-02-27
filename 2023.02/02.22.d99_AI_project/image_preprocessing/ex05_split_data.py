@@ -95,11 +95,11 @@ def ex05_main():
             print("Total No. of Labels: ", len(txt_paths))
             print("Total No. of Train : ", len(train_data))
             print("Total No. of Valid : ", len(valid_data))
-            print(f"{item} split finished...")
+        print(f"{item} split finished...")
 
     # 폴더 삭제
     shutil.rmtree(f"{PATH}/data", ignore_errors=True)
 
 if __name__ == '__main__':
-    # ex04_main()
+    ex04_main()
     ex05_main()

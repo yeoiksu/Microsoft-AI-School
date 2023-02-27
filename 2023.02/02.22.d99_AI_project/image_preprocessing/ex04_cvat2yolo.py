@@ -6,7 +6,7 @@ from xml.etree.ElementTree import parse
 label_num_drone, label_num_bird, label_num_airplane = 0, 0, 0
 label_num_helicopter, label_num_balloon, label_num_military = 0, 0, 0 
 
-PATH = "./2023.02/02.22.d99_AI_project/balloon"
+PATH = "./2023.02/02.22.d99_AI_project/balloon"  # path 수정 필요
 label_dict = {'drone': 0, 'bird': 1, 'airplane': 2, 'helicopter': 3, 'balloon': 4, 'military drone': 5}
 def ex04_main():
     """xml 1 ~ 5 같이 여러 개 생기면 찾는 함수"""
