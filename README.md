@@ -115,12 +115,7 @@ This space is to record what I've learned from MS AI School program
 - DAY 102. [AI Project. Databse & GUI](https://github.com/yeoiksu/Microsoft-AI-School/tree/main/2023.02/02.27.d102_AI_project)
 - DAY 103. [AI Project. Databse & GUI](https://github.com/yeoiksu/Microsoft-AI-School/tree/main/2023.02/02.28.d103_AI_project)
 
-:link: More about [MS AI SCHOOL, South Korea](https://msaischool.kr/)
-
-<!--
-- DAY 100. [Python. Pandas & Matplotlib Pyplot]()
-
-
-
 ### :watermelon: March
---!>
+- DAY 104. [AI Project. Prepare Presentation](https://github.com/yeoiksu/Microsoft-AI-School/tree/main/2023.02/03.02.d104_AI_project)
+
+:link: More about [MS AI SCHOOL, South Korea](https://msaischool.kr/)
