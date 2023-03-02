@@ -116,6 +116,6 @@ This space is to record what I've learned from MS AI School program
 - DAY 103. [AI Project. Databse & GUI](https://github.com/yeoiksu/Microsoft-AI-School/tree/main/2023.02/02.28.d103_AI_project)
 
 ### :watermelon: March
-- DAY 104. [AI Project. Prepare Presentation](https://github.com/yeoiksu/Microsoft-AI-School/tree/main/2023.02/03.02.d104_AI_project)
+- DAY 104. [AI Project. Prepare Presentation](https://github.com/yeoiksu/Microsoft-AI-School/tree/main/2023.03/03.02.d104_AI_project)
 
 :link: More about [MS AI SCHOOL, South Korea](https://msaischool.kr/)
