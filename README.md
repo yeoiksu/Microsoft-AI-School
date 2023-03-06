@@ -108,14 +108,16 @@ This space is to record what I've learned from MS AI School program
 - Day 95. &nbsp;&nbsp;[Team Study. Powerpoint & Presentation](https://github.com/yeoiksu/Microsoft-AI-School/tree/main/2023.02/02.16.d95_team_study)
 - Day 96. &nbsp;&nbsp;[Career Mentoring V](https://github.com/yeoiksu/Microsoft-AI-School/tree/main/2023.02/02.17.d96_career_mentoring_5)
 - Day 97. &nbsp;&nbsp;[Townhall Meeting V](https://github.com/yeoiksu/Microsoft-AI-School/tree/main/2023.02/02.20.d97_townhall_meeting_5)
-- Day 98. &nbsp;&nbsp;[AI Project. Data Colleciting, Bounding Box](https://github.com/yeoiksu/Microsoft-AI-School/tree/main/2023.02/02.21.d98_AI_project)
-- Day 99. &nbsp;&nbsp;[AI Project. Data Colleciting, Bounding Box](https://github.com/yeoiksu/Microsoft-AI-School/tree/main/2023.02/02.22.d99_AI_project)
-- DAY 100. [AI Project. Data Colleciting, Bounding Box](https://github.com/yeoiksu/Microsoft-AI-School/tree/main/2023.02/02.23.d100_AI_project)
-- DAY 101. [AI Project. Yolov5 Inference & Test](https://github.com/yeoiksu/Microsoft-AI-School/tree/main/2023.02/02.24.d101_AI_project)
-- DAY 102. [AI Project. Databse & GUI](https://github.com/yeoiksu/Microsoft-AI-School/tree/main/2023.02/02.27.d102_AI_project)
-- DAY 103. [AI Project. Databse & GUI](https://github.com/yeoiksu/Microsoft-AI-School/tree/main/2023.02/02.28.d103_AI_project)
+- Day 98. &nbsp;&nbsp;[AI Project I. Data Colleciting, Bounding Box](https://github.com/yeoiksu/Microsoft-AI-School/tree/main/2023.02/02.21.d98_AI_project)
+- Day 99. &nbsp;&nbsp;[AI Project I. Data Colleciting, Bounding Box](https://github.com/yeoiksu/Microsoft-AI-School/tree/main/2023.02/02.22.d99_AI_project)
+- DAY 100. [AI Project I. Data Colleciting, Bounding Box](https://github.com/yeoiksu/Microsoft-AI-School/tree/main/2023.02/02.23.d100_AI_project)
+- DAY 101. [AI Project I. Yolov5 Inference & Test](https://github.com/yeoiksu/Microsoft-AI-School/tree/main/2023.02/02.24.d101_AI_project)
+- DAY 102. [AI Project I. Databse & GUI](https://github.com/yeoiksu/Microsoft-AI-School/tree/main/2023.02/02.27.d102_AI_project)
+- DAY 103. [AI Project I. Databse & GUI](https://github.com/yeoiksu/Microsoft-AI-School/tree/main/2023.02/02.28.d103_AI_project)
 
 ### :watermelon: March
-- DAY 104. [AI Project. Prepare Presentation](https://github.com/yeoiksu/Microsoft-AI-School/tree/main/2023.03/03.02.d104_AI_project)
+- DAY 104. [AI Project I. Prepare Presentation](https://github.com/yeoiksu/Microsoft-AI-School/tree/main/2023.03/03.02.d104_AI_project)
+- DAY 105. [AI Project I. Mid Presentation](https://github.com/yeoiksu/Microsoft-AI-School/tree/main/2023.03/03.03.d105_AI_project)
+- DAY 106. [AI Project II. Data Preparation](https://github.com/yeoiksu/Microsoft-AI-School/tree/main/2023.03/03.06.d106_AI_project)
 
 :link: More about [MS AI SCHOOL, South Korea](https://msaischool.kr/)
