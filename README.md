@@ -121,5 +121,6 @@ This space is to record what I've learned from MS AI School program
 - DAY 106. [AI Project II. Data Preparation](https://github.com/yeoiksu/Microsoft-AI-School/tree/main/2023.03/03.06.d106_AI_project)
 - DAY 107. [AI Project II. Data Collection & Yolov8 Model Training](https://github.com/yeoiksu/Microsoft-AI-School/tree/main/2023.03/03.07.d107_AI_project)
 - DAY 108. [AI Project II. GUI & Database](https://github.com/yeoiksu/Microsoft-AI-School/tree/main/2023.03/03.08.d108_AI_project)
+- DAY 109. [AI Project II. GUI & Database](https://github.com/yeoiksu/Microsoft-AI-School/tree/main/2023.03/03.09.d109_AI_project)
 
 :link: More about [MS AI SCHOOL, South Korea](https://msaischool.kr/)
