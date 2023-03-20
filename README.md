@@ -124,5 +124,10 @@ This space is to record what I've learned from MS AI School program
 - DAY 109. [AI Project II. GUI & Database](https://github.com/yeoiksu/Microsoft-AI-School/tree/main/2023.03/03.09.d109_AI_project)
 - DAY 110. [AI Project II. GUI & Database](https://github.com/yeoiksu/Microsoft-AI-School/tree/main/2023.03/03.10.d110_AI_project)
 - DAY 111. [AI Project II. GUI & Database Integration](https://github.com/yeoiksu/Microsoft-AI-School/tree/main/2023.03/03.13.d111_AI_project)
+- DAY 112. [AI Project II. GUI & Database Integration](https://github.com/yeoiksu/Microsoft-AI-School/tree/main/2023.03/03.14.d112_AI_project)
+- DAY 113. [AI Project II. GUI & Database Integration](https://github.com/yeoiksu/Microsoft-AI-School/tree/main/2023.03/03.15.d113_AI_project)
+- DAY 114. [AI Project II. GUI & Database Integration](https://github.com/yeoiksu/Microsoft-AI-School/tree/main/2023.03/03.16.d114_AI_project)
+- DAY 115. [Github & LinkednIn](https://github.com/yeoiksu/Microsoft-AI-School/tree/main/2023.03/03.17.d115_Github_LinkedIn)
+- DAY 116. [Career Mentoring VI](https://github.com/yeoiksu/Microsoft-AI-School/tree/main/2023.03/03.20.d116_career_mentoring_6)
 
 :link: More about [MS AI SCHOOL, South Korea](https://msaischool.kr/)
