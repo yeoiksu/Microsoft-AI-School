@@ -129,5 +129,7 @@ This space is to record what I've learned from MS AI School program
 - DAY 114. [AI Project II. GUI & Database Integration](https://github.com/yeoiksu/Microsoft-AI-School/tree/main/2023.03/03.16.d114_AI_project)
 - DAY 115. [Github & LinkednIn](https://github.com/yeoiksu/Microsoft-AI-School/tree/main/2023.03/03.17.d115_Github_LinkedIn)
 - DAY 116. [Career Mentoring VI](https://github.com/yeoiksu/Microsoft-AI-School/tree/main/2023.03/03.20.d116_career_mentoring_6)
+- DAY 117. [Townhall Meeting VI](https://github.com/yeoiksu/Microsoft-AI-School/tree/main/2023.03/03.21.d117_townhall_meeting_6)
+- DAY 118. [AI Project II. Final Presentation](https://github.com/yeoiksu/Microsoft-AI-School/tree/main/2023.03/03.22.d118_final_presentation)
 
 :link: More about [MS AI SCHOOL, South Korea](https://msaischool.kr/)
